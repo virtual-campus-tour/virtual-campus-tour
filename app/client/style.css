@@ -22,6 +22,10 @@ body .navbar {
   --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
   --bs-navbar-color: var(--matr-navbar-text-color);
   --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
+  --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: url("images/landing-image.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Set the alert background on the signin and signup pages. */
@@ -39,4 +43,22 @@ body .navbar {
   color: var(--bs-dark);
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+.btn-green{
+  background-color: rgb(56, 118, 29) !important;
+  color: white !important;
+}
+
+.spacer {
+  margin-top: 400px !important;
+}
+
+.text-color {
+  color: white !important;
+}
+
+.left-centered-column {
+  text-align: left;
+  padding-left: 450px !important;
 }
