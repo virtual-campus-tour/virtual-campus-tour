@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown, Button } from 'react-bootstrap';
 import { BoxArrowRight, PersonFill, PersonPlusFill } from 'react-bootstrap-icons';
 
 const NavBar = () => {
@@ -22,10 +22,9 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-evenly">
             <NavDropdown>
-              <Buttton>
-
-              </Buttton>
-            </NavDropdown>
+              <Button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                About UHM
+              </Button>
             <Nav.Link id="about-uhm-nav" as={NavLink} to="/about" key="about">About UHM</Nav.Link>
             <Nav.Link id="student-life-nav" as={NavLink} to="/life" key="life">Student Life</Nav.Link>
             <Nav.Link id="department-nav" as={NavLink} to="/department" key="department">Department</Nav.Link>
