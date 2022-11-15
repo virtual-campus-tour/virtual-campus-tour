@@ -5,6 +5,10 @@ import { Col, Container } from 'react-bootstrap';
 const Footer = () => (
   <footer className="mt-auto py-3 bg-light">
     <Container>
+      <h2 className="take-me-to-manoa">#TakeMeToManoa</h2>
+      Improving lives through education and research
+    </Container>
+    <Container className="footer-color">
       <Col className="text-center">
         Department of Information and Computer Sciences
         {' '}
