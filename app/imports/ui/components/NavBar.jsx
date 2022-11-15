@@ -21,6 +21,11 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-evenly">
+            <NavDropdown>
+              <Buttton>
+
+              </Buttton>
+            </NavDropdown>
             <Nav.Link id="about-uhm-nav" as={NavLink} to="/about" key="about">About UHM</Nav.Link>
             <Nav.Link id="student-life-nav" as={NavLink} to="/life" key="life">Student Life</Nav.Link>
             <Nav.Link id="department-nav" as={NavLink} to="/department" key="department">Department</Nav.Link>
