@@ -3,7 +3,7 @@ import { Col, Container, Image } from 'react-bootstrap';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 const Footer = () => (
-  <footer className="mt-auto py-3 bg-light">
+  <footer className="mt-auto bg-light">
     <Container>
       <h2 className="take-me-to-manoa">#TakeMeToManoa</h2>
       Improving lives through education and research
