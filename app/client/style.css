@@ -16,19 +16,22 @@ body {
   --bs-dark-rgb: var(--matr-navbar-bg-rgb);
 }
 
-body .navbar {
+.navbar {
   --bs-navbar-active-color: var(--matr-navbar-highlight-text);
   --bs-navbar-brand-color: var(--matr-navbar-text-color);
   --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
   --bs-navbar-color: var(--matr-navbar-text-color);
   --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
+}
+
+body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background: url("images/landing-image.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* Set the alert background on the signin and signup pages. */
+  /* Set the alert background on the signin and signup pages. */
 #signin-page .alert-light, #signup-page .alert-light {
   --bs-alert-bg: var(--matr-navbar-bg);
 }
