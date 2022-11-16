@@ -3,8 +3,8 @@
 
 /* Set up some CSS variables to theme the application. */
 :root {
-  --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 56, 118, 29;
+  --matr-navbar-bg: #024731;
+  --matr-navbar-bg-rgb: 2, 71, 49;
   --matr-navbar-text-color: white;
 }
 
@@ -20,6 +20,10 @@ body {
   --bs-navbar-brand-color: var(--matr-navbar-text-color);
   --bs-navbar-color: var(--matr-navbar-text-color);
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
+}
+
+a.nav-link{
+  color: white;
 }
 
 body {
