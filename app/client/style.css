@@ -31,9 +31,12 @@ a.nav-link{
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: url("images/landing-image.jpg") no-repeat center center fixed;
+  --bs-dark: var(--matr-navbar-bg);
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
   background-size: cover;
+  background-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
+      url('images/landing-image.jpg');
 }
 
 .div-landing-class {
