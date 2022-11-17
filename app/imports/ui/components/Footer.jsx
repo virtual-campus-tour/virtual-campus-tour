@@ -34,7 +34,7 @@ const Footer = () => (
             </Nav>
           </Col>
           <Col className="text-center pt-4">
-            <Button variant="green" className="fs-4">Book an in-person tour soon</Button>{' '}
+            <Button variant="white" className="fs-4">Book an in-person tour soon</Button>{' '}
           </Col>
         </Row>
       </Container>

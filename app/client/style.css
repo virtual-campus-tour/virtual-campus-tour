@@ -62,7 +62,7 @@ body {
 }
 
 .take-me-to-manoa{
-  color: green;
+  color: #024731;
 }
 
 .footer-color {
@@ -70,8 +70,13 @@ body {
 }
 
 .btn-green{
-  background-color: rgb(56, 118, 29) !important;
+  background-color: rgb(2, 71, 49) !important;
   color: white !important;
+}
+
+.btn-white{
+  background-color: white !important;
+  color: rgb(2, 71, 49) !important;
 }
 
 .spacer {
