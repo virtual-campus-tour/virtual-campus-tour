@@ -14,6 +14,10 @@
 body {
   --bs-dark: var(--matr-navbar-bg);
   --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+  background-size: cover;
+  background-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
+      url('images/landing-image.jpg');
 }
 
 .navbar {
@@ -30,6 +34,11 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background: url("images/landing-image.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+.div-landing-class {
+  height: 760px;
+  width: 1920px;
 }
 
   /* Set the alert background on the signin and signup pages. */
@@ -74,3 +83,9 @@ body {
   text-align: left;
   padding-left: 450px !important;
 }
+
+.navItem {
+  color: white;
+}
+
+
