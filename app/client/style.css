@@ -14,6 +14,9 @@
 body {
   --bs-dark: var(--matr-navbar-bg);
   --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+}
+
+.landing-body {
   background-size: cover;
   background-image:
       linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
@@ -28,15 +31,6 @@ body {
 
 a.nav-link{
   color: white;
-}
-
-body {
-  --bs-dark: var(--matr-navbar-bg);
-  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
-  background-size: cover;
-  background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
-      url('images/landing-image.jpg');
 }
 
 .div-landing-class {
@@ -96,4 +90,14 @@ body {
   color: white;
 }
 
+.dept-spacer {
+  margin-top: 200px !important;
+}
 
+.text-center {
+  text-align: center;
+}
+
+.line-thick {
+  height: 12px;
+}

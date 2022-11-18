@@ -23,7 +23,7 @@ const NavBar = () => {
           <Nav className="me-auto justify-content-evenly">
             <Nav.Link id="about-uhm-nav" as={NavLink} to="/about" key="about">About UHM</Nav.Link>
             <Nav.Link id="student-life-nav" as={NavLink} to="/life" key="life">Student Life</Nav.Link>
-            <Nav.Link id="department-nav" as={NavLink} to="/department" key="department">Department</Nav.Link>
+            <Nav.Link id="department-nav" as={NavLink} to="/Department" key="Department">Department</Nav.Link>
             <Nav.Link id="interest-nav" as={NavLink} to="/interest" key="interest">Interest</Nav.Link>
             {currentUser ? ([
               <Nav.Link id="my-interests-nav" as={NavLink} to="/myinterests" key="myinterests">My Interests</Nav.Link>,
