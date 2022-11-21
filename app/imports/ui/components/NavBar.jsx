@@ -21,10 +21,39 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-evenly">
-            <Nav.Link id="about-uhm-nav" as={NavLink} to="/about" key="about">About UHM</Nav.Link>
-            <Nav.Link id="student-life-nav" as={NavLink} to="/life" key="life">Student Life</Nav.Link>
-            <Nav.Link id="department-nav" as={NavLink} to="/department" key="department">Department</Nav.Link>
-            <Nav.Link id="interest-nav" as={NavLink} to="/interest" key="interest">Interest</Nav.Link>
+            <NavDropdown id="about-uhm-nav" title="About UHM">
+              <NavDropdown.Item id="general-nav" as={NavLink} to="/general">
+                General
+              </NavDropdown.Item>
+              <NavDropdown.Item id="financial-info-nav" as={NavLink} to="/financial-information">
+                Financial Information
+              </NavDropdown.Item>
+              <NavDropdown.Item id="buildings-nav" as={NavLink} to="/buildings">
+                Buildings
+              </NavDropdown.Item>
+              <NavDropdown.Item id="book-a-tour-nav" as={NavLink} to="/book-a-tour">
+                Book A Tour
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown id="student-life-nav" title="Student Life">
+              <NavDropdown.Item id="eateries-nav" as={NavLink} to="/eateries">
+                Eateries
+              </NavDropdown.Item>
+              <NavDropdown.Item id="study-areas-nav" as={NavLink} to="/study-areas">
+                Study Areas
+              </NavDropdown.Item>
+              <NavDropdown.Item id="wrc-nav" as={NavLink} to="/warrior-recreation-center">
+                Warrior Recreation Center
+              </NavDropdown.Item>
+              <NavDropdown.Item id="uh-sports-nav" as={NavLink} to="/athletics">
+                Athletics
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown id="colleges-nav" title="Colleges">
+              <NavDropdown.Item id="college-of-natural-sciences-nav" as={NavLink} to="/college-of-natural-sciences">
+                College of Natural Sciences
+              </NavDropdown.Item>
+            </NavDropdown>
             {currentUser ? ([
               <Nav.Link id="my-interests-nav" as={NavLink} to="/myinterests" key="myinterests">My Interests</Nav.Link>,
             ]) : ''}
