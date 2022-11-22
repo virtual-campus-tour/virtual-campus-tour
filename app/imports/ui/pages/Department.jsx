@@ -4,15 +4,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Department = () => (
 
   <>
+    <div>
+      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+      <img className="dept-img" src="//www.ics.hawaii.edu/wp-content/uploads/2014/03/slider-ics1.jpg" alt="Main Image" />
+      <h2 className="text-center move-text">Information and Computer Science</h2>
+    </div>
     <Container>
-      <h2 className="text-center pt-4 pb-4">Information and Computer Science</h2>
-      <Container className="box-size">
-        <h3>Image Box</h3>
-      </Container>
-    </Container>
-    <hr className="line-thick" />
-    <Container>
-      <h2 className="text-center pb-3">Clubs</h2>
+      <h2 className="text-center pb-3 pt-5">Clubs</h2>
 
       <Row>
         <Col>
@@ -44,13 +42,13 @@ const Department = () => (
         </Col>
       </Row>
     </Container>
-    <Container className="dept-spacer">
+    <Container className="dept-spacer pb-5">
       <h2 className="text-center pb-3">Research</h2>
       <Row>
         <Col>
           <Container className="container-border">
             <div className="text-center">
-              <img src="/images/lavaLabLogo200x200.jpg" alt="Lava Lab Logo" />
+              <img src="/images/lavaLabLogo200x200.jpg" alt="Lava Lab Logo" className="box-img-size" />
             </div>
             <h4 className="text-center">LAVA Lab</h4>
             <p className="text-center">The LAVA lab is ...</p>
