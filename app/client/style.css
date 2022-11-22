@@ -14,10 +14,14 @@
 body {
   --bs-dark: var(--matr-navbar-bg);
   --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+}
+
+.landing-body {
   background-size: cover;
   background-image:
       linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
       url('images/landing-image.jpg');
+
 }
 
 .navbar {
@@ -28,15 +32,6 @@ body {
 
 a.nav-link{
   color: white;
-}
-
-body {
-  --bs-dark: var(--matr-navbar-bg);
-  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
-  background-size: cover;
-  background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
-      url('images/landing-image.jpg');
 }
 
 .div-landing-class {
@@ -96,4 +91,45 @@ body {
   color: white;
 }
 
+.dept-spacer {
+  margin-top: 50px!important;
+}
 
+.text-center {
+  text-align: center;
+}
+
+.container-border {
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 300px;
+}
+
+.box-size {
+  border: 2px solid black;
+  width: 100px;
+  height: 200px;
+}
+
+.box-img-size {
+  width: 150px;
+  height: 150px;
+}
+
+.dept-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: flex;
+}
+
+.centered {
+  position: relative;
+}
+
+.move-text {
+  position: absolute;
+  top: 200px;
+  width: 50%;
+  color: white;
+}

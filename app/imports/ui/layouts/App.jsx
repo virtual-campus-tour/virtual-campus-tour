@@ -15,6 +15,7 @@ import SignOut from '../pages/SignOut';
 import NavBar from '../components/NavBar';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
+import Department from '../pages/Department';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Landing />} />
+        <Route path="/Department" element={<Department />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />

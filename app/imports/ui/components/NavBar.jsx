@@ -31,6 +31,9 @@ const NavBar = () => {
               <NavDropdown.Item id="buildings-nav" as={NavLink} to="/buildings">
                 Buildings
               </NavDropdown.Item>
+              <NavDropdown.Item id="department" as={NavLink} to="/Department">
+                Department
+              </NavDropdown.Item>
               <NavDropdown.Item id="book-a-tour-nav" as={NavLink} to="/book-a-tour">
                 Book A Tour
               </NavDropdown.Item>
@@ -54,13 +57,7 @@ const NavBar = () => {
                 College of Natural Sciences
               </NavDropdown.Item>
             </NavDropdown>
-            {currentUser ? ([
-              <Nav.Link id="my-interests-nav" as={NavLink} to="/myinterests" key="myinterests">My Interests</Nav.Link>,
-            ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
-              <Nav.Link id="department-Name-admin-nav" as={NavLink} to="/departmentName" key="departmentName">departmentName</Nav.Link>,
-              <Nav.Link id="statistics-admin-nav" as={NavLink} to="/stats" key="stats">Statistics</Nav.Link>,
-              <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Administration</Nav.Link>,
             ]) : ''}
           </Nav>
           <Nav className="justify-content-end">
