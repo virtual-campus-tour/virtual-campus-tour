@@ -14,5 +14,15 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "profileInformation": [
+    { "firstName": "John", "lastName": "Foo", "state": "HI", "major1": "Biology", "major2": "History" },
+    { "firstName": "Bob", "lastName": "Smith", "state": "WA", "major1": "Computer Science", "major2": "Linguistics" }
+  ],
+
+  "clubs": [
+    { "clubName": "Association For Computing Machinery at the University of Hawaii at Manoa", "description": "BLAHBLAHBLAH", "type": "professional development", "primaryMajor": "Computer Science" },
+    { "clubName": "Game Dev", "description": "BLAHBLAHBLAH2", "type": "special interest", "primaryMajor": "Computer Science" }
   ]
 }
