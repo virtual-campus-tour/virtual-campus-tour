@@ -21,7 +21,7 @@ body {
   background-image:
       linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
       url('images/landing-image.jpg');
-
+  height: 100%;
 }
 
 .navbar {
