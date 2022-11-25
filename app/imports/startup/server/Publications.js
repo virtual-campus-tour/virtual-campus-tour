@@ -7,7 +7,7 @@ import { Clubs } from '../../api/stuff/clubs';
 Meteor.publish(Clubs.userPublicationName, function () {
   if (this.userId) {
     const username = Meteor.users.findOne(this.userId).username;
-    return Clubs.collection.find({ owner: username });
+    return Clubs.collection.find({ primaryMajor: username });
   }
   return this.ready();
 });
