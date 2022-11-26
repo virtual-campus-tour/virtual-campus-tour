@@ -56,7 +56,14 @@ const Department = () => (
         </Col>
         <Col>
           <Container className="container-border">
-            <p>Text Field</p>
+            <div className="text-center">
+              <img src="/images/mamogram.jpg" alt="mamogram" className="box-img-size" />
+              <img src="/images/medical.jpg" alt="medical" className="box-img-size" />
+            </div>
+            <h4 className="text-center">Medical Imaging</h4>
+            <p className="text-center">Computer Science faculty Dr. Peter Washington and Dr. Peter Sadowski collaborated with Dr. John Shepherd at the UH Cancer Center to apply AI to medical imaging applications, including total-body DXA,breast cancer detection, and the Makawalu project which is developing a portable AI-based  ultrasound breast cancer screening tool.</p>
+            <img src="/images/peter-sadowski.jpg" alt="peter-sadowski" className="box-img-size" />
+            <img src="/images/peter-washington.jpg" alt="peter-washington" className="box-img-size" />
           </Container>
         </Col>
         <Col>
