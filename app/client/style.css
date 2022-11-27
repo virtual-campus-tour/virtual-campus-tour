@@ -107,13 +107,23 @@ a.nav-link{
 
 .box-size {
   border: 2px solid black;
-  width: 100px;
-  height: 200px;
+  width: 700px;
+  height: 4000px;
 }
 
 .box-img-size {
-  width: 150px;
+  width: 100px;
   height: 150px;
+}
+
+.box-img-sizeS {
+  width: 60px;
+  height: 60px;
+}
+
+.box-img-sizeP {
+  width: 60px;
+  height: 60px;
 }
 
 .dept-img {
