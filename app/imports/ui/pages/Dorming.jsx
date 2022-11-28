@@ -176,6 +176,11 @@ const Dorming = () => (
         </Button>
       </Col>
     </Row>
+    <Row className="mt-3">
+      <Button href="#" variant="green" className="btn btn-lg fs-2">
+        Next Page
+      </Button>
+    </Row>
   </Container>
 );
 
