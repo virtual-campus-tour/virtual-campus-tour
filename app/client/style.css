@@ -141,6 +141,8 @@ a.nav-link{
 
 .centered {
   position: relative;
+  width: 50%;
+  display: block;
 }
 
 .move-text {
@@ -148,4 +150,8 @@ a.nav-link{
   top: 200px;
   width: 50%;
   color: white;
+}
+
+.general-image {
+  width: 80%;
 }
