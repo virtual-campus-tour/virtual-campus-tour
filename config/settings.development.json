@@ -14,5 +14,16 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultClubs": [
+    {
+      "name": "ACM", "image": "/images/ACMImg.webp",
+      "description": "The Association for Computing Machinery at UH Manoa (ACManoa/ACM) is the largest computer science organization, welcoming all students of different backgrounds, interests, and skill levels. We are a registered student chapter of the International Association for Computing Machinery society. We fulfill our goals of providing social, professional, and technical enrichment for our members by providing various opportunities.", "owner": "john@foo.com"
+    },
+    {
+      "name": "Game dev", "image": "/images/GameDevLogo.jpg",
+      "description": "The University of Hawaii at Manoa Game Development Club focuses on the collaborative production of video games using Unity, Maya, and Unreal Engine. Our members work together to create unique designs, art, and mechanics for the participation of 1-2 game jams. No experience is required to join as we all enter with a mindset of learning something new.", "owner": "john@foo.com"
+    }
   ]
 }
