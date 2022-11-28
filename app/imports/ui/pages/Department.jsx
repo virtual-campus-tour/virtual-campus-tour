@@ -16,28 +16,30 @@ const Department = () => (
         <Col>
           <Container className="container-border">
             <div className="text-center pt-2">
-              <img src="/images/GHImg.webp" alt="Grey Hats Logo" />
+              <img src="/images/GameDevLogo.jpg" alt="Grey Hats Logo" className="box-img-sizeS" />
             </div>
-            <h4 className="text-center">Grey Hats</h4>
-            <p className="text-center">Grey Hats is a club that focuses on cyber security</p>
+            <h4 className="text-center">Game Dev</h4>
+            {/* eslint-disable-next-line max-len */}
+            <p className="text-center">The University of Hawaii at Manoa Game Development Club focuses on the collaborative production of video games using Unity, Maya, and Unreal Engine. Our members work together to create unique designs, art, and mechanics for the participation of 1-2 game jams. No experience is required to join as we all enter with a mindset of learning something new.
+            </p>
           </Container>
         </Col>
         <Col>
           <Container className="container-border">
             <div className="text-center pt-2">
-              <img src="/images/ACMImg.webp" alt="ACM Logo" />
+              <img src="/images/ACMImg.webp" alt="ACM Logo" className="box-img-sizeS" />
             </div>
-            <h4 className="text-center">ACM</h4>
-            <p className="text-center">ACM is a club that hosts many computer science related events</p>
+            <h4 className="text-center">Association for Computing Machinery at the University of Hawaii at Manoa</h4>
+            {/* eslint-disable-next-line max-len */}
+            <p className="text-center">The Association for Computing Machinery at UH Manoa (ACManoa/ACM) is the largest computer science organization, welcoming all students of different backgrounds, interests, and skill levels. We are a registered student chapter of the International Association for Computing Machinery society. We fulfill our goals of providing social, professional, and technical enrichment for our members by providing various opportunities.</p>
           </Container>
         </Col>
         <Col>
           <Container className="container-border">
-            <div className="text-center pt-2">
-              <img src="/images/PandasImg.webp" alt="Pandas Logo" />
-            </div>
-            <h4 className="text-center">PANDA</h4>
-            <p className="text-center">PANDA is a club for learning data structures and algorithms</p>
+            <h4 className="text-center">Ballroom Dance Club</h4>
+            {/* eslint-disable-next-line max-len */}
+            <p className="text-center">Did you know that the top Amateur Collegiate Ballroom Dancers in the USA in the past few years have been Computer Science majors working in the High Tech industry? Did you know that Carnegie Mellon University, Georgia Tech, the University of Minnesota and Purdue University are in the top 10 collegiate ballroom teams? (And many of the competitors are Computer Science and Engineering majors!)
+            </p>
           </Container>
         </Col>
       </Row>
