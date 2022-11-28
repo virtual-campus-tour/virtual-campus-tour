@@ -20,13 +20,6 @@ const Dorming = () => (
               alt="Double Bedroom"
             />
           </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://lh3.googleusercontent.com/p/AF1QipOb5luDZyuBmNfJGXoYoCnQEhsZolzH97EXCSZD=s1360-w1360-h1020"
-              alt="Third slide"
-            />
-          </Carousel.Item>
         </Carousel>
       </Col>
       <Col>
@@ -61,13 +54,6 @@ const Dorming = () => (
               alt="Second slide"
             />
           </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
-            />
-          </Carousel.Item>
         </Carousel>
       </Col>
     </Row>
@@ -86,13 +72,6 @@ const Dorming = () => (
               className="d-block w-100"
               src="https://manoa.hawaii.edu/housing/wp-content/uploads/2021/08/HA-Full-Floor-Plan.jpg"
               alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
             />
           </Carousel.Item>
         </Carousel>
@@ -128,15 +107,6 @@ const Dorming = () => (
               src="https://manoa.hawaii.edu/housing/wp-content/uploads/2021/08/HA-Full-Floor-Plan.jpg"
               alt="Second slide"
             />
-
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
-            />
-
           </Carousel.Item>
         </Carousel>
       </Col>
@@ -157,13 +127,6 @@ const Dorming = () => (
               className="d-block w-100"
               src="https://manoa.hawaii.edu/housing/wp-content/uploads/2021/08/HA-Full-Floor-Plan.jpg"
               alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
             />
           </Carousel.Item>
         </Carousel>
