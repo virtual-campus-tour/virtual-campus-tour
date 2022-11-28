@@ -133,3 +133,11 @@ a.nav-link{
   width: 50%;
   color: white;
 }
+
+.table-size {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
