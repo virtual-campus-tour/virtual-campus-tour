@@ -14,7 +14,7 @@ const Department = () => (
 
       <Row>
         <Col>
-          <Container className="container-border">
+          <Container className="container-borderC">
             <div className="text-center pt-2">
               <img src="/images/GameDevLogo.jpg" alt="Grey Hats Logo" className="box-img-sizeS" />
             </div>
@@ -25,7 +25,7 @@ const Department = () => (
           </Container>
         </Col>
         <Col>
-          <Container className="container-border">
+          <Container className="container-borderC">
             <div className="text-center pt-2">
               <img src="/images/ACMImg.webp" alt="ACM Logo" className="box-img-sizeS" />
             </div>
@@ -35,7 +35,7 @@ const Department = () => (
           </Container>
         </Col>
         <Col>
-          <Container className="container-border">
+          <Container className="container-borderC">
             <h4 className="text-center">Ballroom Dance Club</h4>
             {/* eslint-disable-next-line max-len */}
             <p className="text-center">Did you know that the top Amateur Collegiate Ballroom Dancers in the USA in the past few years have been Computer Science majors working in the High Tech industry? Did you know that Carnegie Mellon University, Georgia Tech, the University of Minnesota and Purdue University are in the top 10 collegiate ballroom teams? (And many of the competitors are Computer Science and Engineering majors!)
@@ -48,16 +48,16 @@ const Department = () => (
       <h2 className="text-center pb-3">Research</h2>
       <Row>
         <Col>
-          <Container className="container-border">
+          <Container className="container-borderR">
             <div className="text-center">
               <img src="/images/lavaLabLogo200x200.jpg" alt="Lava Lab Logo" className="box-img-size" />
             </div>
             <h4 className="text-center">LAVA Lab</h4>
-            <p className="text-center">The LAVA lab is ...</p>
+            <p className="text-center">The LAVA Lab is a notable laboratory with Computer Science faculty, Directory Dr. Jason Leigh, that is pivotal in creating data visualization that assists in making predictions and preparing the State of Hawaii for the future with an emphasis on climate change</p>
           </Container>
         </Col>
         <Col>
-          <Container className="container-border">
+          <Container className="container-borderR">
             <div className="text-center">
               <img src="/images/peter-sadowski.jpg" alt="peter-sadowski" className="box-img-sizeP" />
               <img src="/images/mamogram.jpg" alt="mamogram" className="box-img-sizeS" />
@@ -66,11 +66,6 @@ const Department = () => (
             </div>
             <h4 className="text-center">Medical Imaging</h4>
             <p className="text-center">Computer Science faculty Dr. Peter Washington and Dr. Peter Sadowski collaborated with Dr. John Shepherd at the UH Cancer Center to apply AI to medical imaging applications, including total-body DXA,breast cancer detection, and the Makawalu project which is developing a portable AI-based  ultrasound breast cancer screening tool.</p>
-          </Container>
-        </Col>
-        <Col>
-          <Container className="container-border">
-            <p>Text Field</p>
           </Container>
         </Col>
       </Row>

@@ -99,10 +99,16 @@ a.nav-link{
   text-align: center;
 }
 
-.container-border {
+.container-borderC {
   border: 2px solid black;
   border-radius: 15px;
-  height: 300px;
+  height: 600px;
+}
+
+.container-borderR {
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 350px;
 }
 
 .box-size {
