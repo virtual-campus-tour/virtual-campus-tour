@@ -21,7 +21,7 @@ body {
   background-image:
       linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(82, 76, 76, 0.73)),
       url('images/landing-image.jpg');
-
+  height: 100%;
 }
 
 .navbar {
@@ -99,21 +99,37 @@ a.nav-link{
   text-align: center;
 }
 
-.container-border {
+.container-borderC {
   border: 2px solid black;
   border-radius: 15px;
-  height: 300px;
+  height: 600px;
+}
+
+.container-borderR {
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 350px;
 }
 
 .box-size {
   border: 2px solid black;
-  width: 100px;
-  height: 200px;
+  width: 700px;
+  height: 4000px;
 }
 
 .box-img-size {
-  width: 150px;
+  width: 100px;
   height: 150px;
+}
+
+.box-img-sizeS {
+  width: 70px;
+  height: 70px;
+}
+
+.box-img-sizeP {
+  width: 70px;
+  height: 70px;
 }
 
 .dept-img {
@@ -124,7 +140,9 @@ a.nav-link{
 }
 
 .centered {
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .move-text {
@@ -132,4 +150,21 @@ a.nav-link{
   top: 200px;
   width: 50%;
   color: white;
+}
+
+.general-image {
+  width: 80%;
+}
+
+.small-spacer {
+  margin-top: 50px
+}
+
+.half-spacer {
+  margin-top: 200px;
+}
+
+.para-spacing {
+  margin-left: 50px;
+  margin-right: 50px;
 }
