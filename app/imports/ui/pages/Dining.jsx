@@ -3,7 +3,11 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 
 const Dining = () => (
   <Container>
-    <h1>Places to eat around UH Manoa</h1>
+    <Row>
+      <Col className="center">
+        <h1>Places to eat around UH Manoa</h1>
+      </Col>
+    </Row>
     <Row>
       <h2>Campus Center</h2>
       <Col>
@@ -12,6 +16,7 @@ const Dining = () => (
           <Card.Body>
             <Card.Title>Ba-Le</Card.Title>
             <Card.Text>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               Located at Hemenway Hall, Ba-Le is the perfect stop if you're craving something a little different.
 
               Pastries, sandwiches, and pre-made salads are some of their quick lunch options. Popular items at Ba-Le include pho, pad thai, and banh mi sandwiches.
@@ -20,7 +25,7 @@ const Dining = () => (
 
               Manoa Gardens, located inside Ba-Le, is our campus bar for those age 21 and older.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://uhm.sodexomyway.com/dining-near-me/ba-le" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -28,13 +33,15 @@ const Dining = () => (
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src="https://manoa.hawaii.edu/studentlife/wp-content/uploads/BritoBowls_UniofHawaii.png" />
           <Card.Body>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <Card.Title>B'RITO</Card.Title>
             <Card.Text>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               Located on the first floor of Campus Center across from the ATMs, B'RITO serves up fresh and flavorful Mexican food.
 
               We have a variety of different protein options to suit your taste!
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://uhm.sodexomyway.com/dining-near-me/stir-fresh" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -48,7 +55,7 @@ const Dining = () => (
 
               Our location strives to give you the very same experience found at any other Starbucks across the nation.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://uhm.sodexomyway.com/dining-near-me/starbucks" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -62,7 +69,7 @@ const Dining = () => (
 
               Jamba blends real fruit and whole ingredients into each delicious fresh juice, smoothie, or energy bowl you order and contains no artificial colors, preservatives, or flavors.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://uhm.sodexomyway.com/dining-near-me/jamba" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -74,7 +81,7 @@ const Dining = () => (
             <Card.Text>
               The Campus Center Food Court offers a variety of food including plate lunches, bentos, grab-and-go salads and wraps, burgers, and more!
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://uhm.sodexomyway.com/dining-near-me/cc-food-court" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -89,7 +96,7 @@ const Dining = () => (
             <Card.Text>
               Dunkin’ Donuts in Paradise Palms Cafe will keep Hawaii running with high-quality beverage offerings–including freshly-brewed Hot and Iced Coffees–paired perfectly with delicious donuts, bakery good, sandwiches and more.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://manoa.hawaii.edu/food/dunkin/" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -99,9 +106,10 @@ const Dining = () => (
           <Card.Body>
             <Card.Title>Holoholo Bistro</Card.Title>
             <Card.Text>
+              {/* eslint-disable-next-line max-len */}
               Located near Legacy Path closest to the Dole Street crosswalk, Holoholo Bistro is the mobile concept of Holoholo Grill featuring convenient and delicious grab-and-go items. Made with local, fresh ingredients, these tasty meals and snacks are perfect quick bite to eat.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://manoa.hawaii.edu/food/holoholo-bistro/" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -111,9 +119,10 @@ const Dining = () => (
           <Card.Body>
             <Card.Title>L&L</Card.Title>
             <Card.Text>
+              {/* eslint-disable-next-line max-len */}
               Delicious local and Asian-American fusion cuisine served in big portions at reasonable prices! Try delicious L&L favorites like the Hawaiian Barbecue beef, chicken, or short ribs! Enjoy L&L’s famous fried chicken katsu, the best in town! Grab-and-go, breakfast items and party packs for groups also available.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://manoa.hawaii.edu/food/ll-hawaiian-barbecue/" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -123,9 +132,10 @@ const Dining = () => (
           <Card.Body>
             <Card.Title>Le Crêpe Café</Card.Title>
             <Card.Text>
+              {/* eslint-disable-next-line max-len */}
               Le Crêpe Café makes traditional French crêpes, cooked to order in front of customers. They specialize in a flavorsome menu of sweet and savory crêpes and use fresh ingredients, organic when possible. Their utensils are even bio-compostable. Enjoy a crêpe any time of day, as a breakfast, snack, main course, or dessert — close your eyes and you’re in Paris!
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://manoa.hawaii.edu/food/le-crepe-cafe/" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -139,7 +149,7 @@ const Dining = () => (
 
               We are focusing on vegan and gluten free meals and offer 4 – 5 options that are changed daily. Besides the vegan options we offer 3 meat options ranging from mild to spicy!
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://manoa.hawaii.edu/food/lasoon/" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -149,9 +159,10 @@ const Dining = () => (
           <Card.Body>
             <Card.Title>Panda Express</Card.Title>
             <Card.Text>
+              {/* eslint-disable-next-line max-len */}
               Panda Express serves gourmet Chinese food made with only the freshest ingredients. Famous for its Orange Chicken, they also offer a number of Wok Smart entrées that contain less than 250 calories per serving. Panda Express’ offerings can be enjoyed in Panda Bowls, or two and three item plates. Perfect for lunch, dinner or as a pick-me-up snack between classes.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://manoa.hawaii.edu/food/panda-express/" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -170,7 +181,7 @@ const Dining = () => (
 
               Located at the center of the Hale Aloha Towers on the lower campus, Hale Aloha Cafe is open 7 days a week
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://uhm.sodexomyway.com/dining-near-me/hale-aloha-cafe" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -182,7 +193,7 @@ const Dining = () => (
             <Card.Text>
               Gateway Cafe offers Breakfast and Lunch during the week. Menus available online and on the Everyday App.
             </Card.Text>
-            <Button variant="green">Learn More</Button>
+            <Button href="https://uhm.sodexomyway.com/dining-near-me/gateway-cafe" variant="green">Learn More</Button>
           </Card.Body>
         </Card>
       </Col>
