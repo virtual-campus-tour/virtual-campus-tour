@@ -15,4 +15,4 @@ class GeneralPage {
 
 }
 
-export const GeneralPage = new GeneralPage();
+export const general = new GeneralPage();
