@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 
 const Department = () => (
 
-  <Container id="#landing-page">
+  <Container>
     <div className="small-spacer">
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <img className="general-image centered" src="/images/UH-top.jpg" alt="Main Image" />
