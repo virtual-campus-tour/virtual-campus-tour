@@ -198,8 +198,10 @@ const Dining = () => (
         </Card>
       </Col>
     </Row>
-    <Row>
-      <Button variant="green">Next Section</Button>
+    <Row className="mt-3">
+      <Button href="/classrooms" variant="green" className="btn btn-lg fs-2" id="classrooms-page-click">
+        Next Page
+      </Button>
     </Row>
   </Container>
 );

@@ -140,7 +140,7 @@ const Dorming = () => (
       </Col>
     </Row>
     <Row className="mt-3">
-      <Button href="#" variant="green" className="btn btn-lg fs-2">
+      <Button href="/dining" variant="green" className="btn btn-lg fs-2" id="dining-page-click">
         Next Page
       </Button>
     </Row>

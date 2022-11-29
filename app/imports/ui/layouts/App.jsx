@@ -19,6 +19,7 @@ import Dining from '../pages/Dining';
 import Dorming from '../pages/Dorming';
 import General from '../pages/General';
 import MyInterests from '../pages/MyInterests';
+import Classrooms from '../pages/Classrooms';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -30,6 +31,7 @@ const App = () => (
         <Route path="/Department" element={<Department />} />
         <Route path="/dining" element={<Dining />} />
         <Route path="/Dorming" element={<Dorming />} />
+        <Route path="/Classrooms" element={<Classrooms />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
