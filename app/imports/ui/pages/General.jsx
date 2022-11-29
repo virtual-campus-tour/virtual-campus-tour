@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 const Department = () => (
 
@@ -36,7 +36,13 @@ const Department = () => (
       <h3 className="text-center">Maluna aʻe o nā lāhui a pau ke ola ke kanaka</h3>
       <h3 className="text-center">(Above all nations is humanity)</h3>
     </Container>
-
+    <Container>
+      <Row className="mt-3">
+        <Button href="/dorming" variant="green" className="btn btn-lg fs-2">
+          Next Page
+        </Button>
+      </Row>
+    </Container>
   </>
 );
 
