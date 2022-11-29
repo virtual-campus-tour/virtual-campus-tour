@@ -3,6 +3,7 @@ import { signinPage } from './signin.page';
 import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
 import { general } from './general.page';
+import { dorming } from './dorming.page';
 
 /* global fixture:false, test:false */
 
@@ -18,6 +19,10 @@ test('Test that landing page shows up', async (testController) => {
 
 test('Test that general page works', async (testController) => {
   await general.isDisplayed(testController);
+});
+
+test('Test that dorming page works', async (testController) => {
+  await dorming.isDisplayed(testController);
 });
 
 test('Test that signin and signout work', async (testController) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
 
 const Dorming = () => (
-  <Container>
+  <Container id="dorming-page">
     <Row className="mt-3">
       <Col>
         <Carousel>

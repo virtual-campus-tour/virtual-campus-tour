@@ -37,7 +37,7 @@ const generalPage = () => (
     </Container>
     <Container>
       <Row className="mt-3">
-        <Button href="/dorming" variant="green" className="btn btn-lg fs-2">
+        <Button href="/dorming" variant="green" className="btn btn-lg fs-2" id="dorming-page-click">
           Next Page
         </Button>
       </Row>
