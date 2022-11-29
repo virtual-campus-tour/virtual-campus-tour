@@ -2,6 +2,7 @@ import { landingPage } from './landing.page';
 import { signinPage } from './signin.page';
 import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
+import { general } from './general.page';
 
 /* global fixture:false, test:false */
 
@@ -13,6 +14,15 @@ fixture('meteor-react-bootstrap-template localhost test with default db')
 
 test('Test that landing page shows up', async (testController) => {
   await landingPage.isDisplayed(testController);
+});
+
+test('Test that general page works', async (testController) => {
+  await general.goToGeneral(testController);
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.isLoggedIn(testController, credentials.username);
+  await navBar.logout(testController);
+  await signoutPage.isDisplayed(testController);
 });
 
 test('Test that signin and signout work', async (testController) => {

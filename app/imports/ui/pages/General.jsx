@@ -1,9 +1,8 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 
-const Department = () => (
-
-  <Container>
+const generalPage = () => (
+  <Container id="general-page">
     <div className="small-spacer">
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <img className="general-image centered" src="/images/UH-top.jpg" alt="Main Image" />
@@ -46,4 +45,4 @@ const Department = () => (
   </Container>
 );
 
-export default Department;
+export default generalPage;
