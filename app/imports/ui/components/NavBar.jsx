@@ -57,6 +57,9 @@ const NavBar = () => {
                 College of Natural Sciences
               </NavDropdown.Item>
             </NavDropdown>
+            {currentUser ? ([
+              <Nav.Link id="my-interests-nav" as={NavLink} to="/my-interests">My Interests</Nav.Link>,
+            ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
             ]) : ''}
           </Nav>
