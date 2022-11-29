@@ -1,8 +1,8 @@
 import { Selector } from 'testcafe';
 
-class DepartmentPage {
+class InterestPage {
   constructor() {
-    this.pageId = '#department-page';
+    this.pageId = '#myInterest';
     this.pageSelector = Selector(this.pageId);
   }
 
@@ -13,4 +13,4 @@ class DepartmentPage {
   }
 }
 
-export const department = new DepartmentPage();
+export const interest = new InterestPage();

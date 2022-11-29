@@ -24,7 +24,7 @@ const MyInterests = () => {
   }, []);
 
   return (ready ? (
-    <Container className="py-3">
+    <Container className="py-3" id="myInterest">
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center py-3">

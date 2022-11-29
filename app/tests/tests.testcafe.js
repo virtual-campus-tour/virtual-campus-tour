@@ -4,6 +4,8 @@ import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
 import { general } from './general.page';
 import { dorming } from './dorming.page';
+import { department } from './department.page';
+import { interest } from './interest.page';
 
 /* global fixture:false, test:false */
 
@@ -31,4 +33,16 @@ test('Test that signin and signout work', async (testController) => {
   await navBar.isLoggedIn(testController, credentials.username);
   await navBar.logout(testController);
   await signoutPage.isDisplayed(testController);
+});
+
+test('Test that department page works', async (testController) => {
+  await navBar.gotoDepartmentPage(testController);
+  await department.isDisplayed(testController);
+});
+
+test('Test that interest page works', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.gotoInterestPage(testController);
+  await interest.isDisplayed(testController);
 });

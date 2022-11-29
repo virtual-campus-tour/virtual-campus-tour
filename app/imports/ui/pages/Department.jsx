@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Department = () => (
 
-  <>
+  <div id="department-page">
     <div>
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <img className="dept-img" src="//www.ics.hawaii.edu/wp-content/uploads/2014/03/slider-ics1.jpg" alt="Main Image" />
@@ -73,7 +73,7 @@ const Department = () => (
       </Row>
     </Container>
 
-  </>
+  </div>
 );
 
 export default Department;
