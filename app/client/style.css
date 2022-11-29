@@ -140,9 +140,9 @@ a.nav-link{
 }
 
 .centered {
-  position: relative;
-  width: 50%;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .move-text {
@@ -154,4 +154,17 @@ a.nav-link{
 
 .general-image {
   width: 80%;
+}
+
+.small-spacer {
+  margin-top: 50px
+}
+
+.half-spacer {
+  margin-top: 200px;
+}
+
+.para-spacing {
+  margin-left: 50px;
+  margin-right: 50px;
 }
