@@ -47,7 +47,7 @@ const EditUser = () => {
 
   /* If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   return (ready) ? (
-    <Container>
+    <Container id="edit-user-page">
       <Row className="justify-content-center">
         <Col>
           <h2 className="text-center">Edit User</h2>

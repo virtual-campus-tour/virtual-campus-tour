@@ -6,6 +6,7 @@ import { general } from './general.page';
 import { dorming } from './dorming.page';
 import { department } from './department.page';
 import { interest } from './interest.page';
+import { EditUser } from './edituser.page';
 
 /* global fixture:false, test:false */
 
@@ -45,4 +46,11 @@ test('Test that interest page works', async (testController) => {
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoInterestPage(testController);
   await interest.isDisplayed(testController);
+});
+
+test('Test that Edit User page works', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.gotoEditUserPage(testController);
+  await EditUser.isDisplayed(testController);
 });
