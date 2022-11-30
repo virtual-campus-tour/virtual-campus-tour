@@ -79,6 +79,12 @@ const NavBar = () => {
               </NavDropdown>
             ) : (
               <NavDropdown id="navbar-current-user" title={currentUser}>
+                <NavDropdown.Item id="navbar-edit-user" as={NavLink} to={`/edit/${currentUser}`}>
+                  <BoxArrowRight />
+                  {' '}
+                  Edit
+                  User
+                </NavDropdown.Item>
                 <NavDropdown.Item id="navbar-sign-out" as={NavLink} to="/signout">
                   <BoxArrowRight />
                   {' '}

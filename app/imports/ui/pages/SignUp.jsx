@@ -5,7 +5,8 @@ import { Accounts } from 'meteor/accounts-base';
 import { Alert, Card, Col, Container, Row } from 'react-bootstrap';
 import SimpleSchema from 'simpl-schema';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
-import { AutoForm, ErrorsField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, SelectField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { StudentData, StudentDataValues as DataValues } from '../../api/studentdata/StudentData';
 
 /**
  * SignUp component is similar to signin component, but we create a new user instead.
@@ -15,14 +16,23 @@ const SignUp = ({ location }) => {
   const [redirectToReferer, setRedirectToRef] = useState(false);
 
   const schema = new SimpleSchema({
+    name: String,
     email: String,
     password: String,
+    clubs: { label: 'Clubs', type: Array, optional: true },
+    'clubs.$': { type: String, allowedValues: DataValues.clubs },
   });
   const bridge = new SimpleSchema2Bridge(schema);
 
   /* Handle SignUp submission. Create user account and a profile entry, then redirect to the home page. */
   const submit = (doc) => {
-    const { email, password } = doc;
+    console.log(doc);
+    const { name, email, password, clubs } = doc;
+    StudentData.insert(
+      {
+        name, email, clubs,
+      },
+    );
     Accounts.createUser({ email, username: email, password }, (err) => {
       if (err) {
         setError(err.reason);
@@ -39,6 +49,10 @@ const SignUp = ({ location }) => {
   if (redirectToReferer) {
     return <Navigate to={from} />;
   }
+
+  // Put a space before the label for the Clubs SelectField.
+  const transform = (label) => ` ${label}`;
+
   return (
     <Container id="signup-page" className="py-3">
       <Row className="justify-content-center">
@@ -49,8 +63,20 @@ const SignUp = ({ location }) => {
           <AutoForm schema={bridge} onSubmit={data => submit(data)}>
             <Card>
               <Card.Body>
+                <TextField name="name" placeholder="Name" />
                 <TextField name="email" placeholder="E-mail address" />
                 <TextField name="password" placeholder="Password" type="password" />
+                <SelectField
+                  name="clubs"
+                  showInlineError
+                  help="Select clubs (optional)"
+                  multiple
+                  checkboxes
+                  inline
+                  labelClassName="px-2"
+                  inputClassName="px-1"
+                  transform={transform}
+                />
                 <ErrorsField />
                 <SubmitField />
               </Card.Body>

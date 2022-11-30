@@ -1,15 +1,12 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Clubs } from '../../api/club/Clubs';
+import { StudentData } from '../../api/studentdata/StudentData';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise publish nothing.
 Meteor.publish(Clubs.userPublicationName, function () {
-  if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return Clubs.collection.find({ owner: username });
-  }
-  return this.ready();
+  return Clubs.collection.find();
 });
 
 // Admin-level publication.
@@ -29,3 +26,5 @@ Meteor.publish(null, function () {
   }
   return this.ready();
 });
+
+Meteor.publish('StudentData', () => StudentData.find());
