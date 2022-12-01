@@ -14,7 +14,7 @@ const Landing = () => (
         </Col>
         <Col>
           <Container className="pt-4">
-            <Button href="/general" variant="green" className="btn btn-lg fs-2" id="general-page-click">
+            <Button href="/GeneralTour" variant="green" className="btn btn-lg fs-2" id="general-page-click">
               Start Virtual Tour
             </Button>
           </Container>
