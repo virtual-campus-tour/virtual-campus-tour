@@ -40,7 +40,7 @@ const MyInterests = () => {
     studentClubs.forEach((club) => {
       myClubs.push(_.findWhere(clubs, { name: club }));
     });
-    console.log(myClubs);
+    // console.log(myClubs);
   }
   return (ready ? (
     <Container className="py-3" id="myInterest">

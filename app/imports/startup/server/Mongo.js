@@ -6,7 +6,7 @@ import { StudentData } from '../../api/studentdata/StudentData';
 
 // Initialize the database with a default data document.
 const addClubs = (club) => {
-  console.log(`  Adding: ${club.name} (${club.owner})`);
+  console.log(`  Adding: ${club.name}`);
   Clubs.collection.insert(club);
 };
 
@@ -19,7 +19,7 @@ if (Clubs.collection.find().count() === 0) {
 }
 
 const addStudentData = (data) => {
-  console.log(`  Adding: ${data.username}`);
+  console.log(`  Adding: ${data.email}`);
   StudentData.insert({ name: data.email, email: data.email });
 };
 

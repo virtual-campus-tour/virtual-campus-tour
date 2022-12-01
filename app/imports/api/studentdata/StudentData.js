@@ -6,7 +6,7 @@ import { Tracker } from 'meteor/tracker';
 const StudentData = new Mongo.Collection('StudentData');
 
 const StudentDataValues = {
-  clubs: ['ACM', 'Game Dev', 'SWITCH'],
+  clubs: ['ACM', 'Game Dev', 'SWITCH', 'BDCUH'],
   // majors: ['Physics', 'Math', 'Chemistry', 'Computer Science'],
 };
 
