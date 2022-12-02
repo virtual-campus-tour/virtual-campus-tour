@@ -14,6 +14,7 @@ import NavBar from '../components/NavBar';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import Department from '../pages/Department';
+import Dining from '../pages/Dining';
 import Dorming from '../pages/Dorming';
 import General from '../pages/General';
 import MyInterests from '../pages/MyInterests';
@@ -29,6 +30,7 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route path="/Department" element={<Department />} />
+        <Route path="/dining" element={<Dining />} />
         <Route path="/Dorming" element={<Dorming />} />
         <Route path="/Scholarship" element={<Scholarship />} />
         <Route path="/GeneralTour" element={<GeneralTour />} />
