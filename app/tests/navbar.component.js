@@ -59,8 +59,7 @@ class NavBar {
     if (!visible) {
       await testController.click('button.navbar-toggler');
     }
-    await testController.click('#about-uhm-nav');
-    await testController.click('#department');
+    await testController.click('#ics-department-nav');
   }
 
   async gotoInterestPage(testController) {
