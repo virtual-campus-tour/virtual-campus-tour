@@ -34,9 +34,6 @@ const NavBar = () => {
               <NavDropdown.Item id="buildings-nav" as={NavLink} to="/buildings">
                 Buildings
               </NavDropdown.Item>
-              <NavDropdown.Item id="department" as={NavLink} to="/Department">
-                Department
-              </NavDropdown.Item>
               <NavDropdown.Item id="book-a-tour-nav" as={NavLink} to="/book-a-tour">
                 Book A Tour
               </NavDropdown.Item>
@@ -55,13 +52,18 @@ const NavBar = () => {
                 Athletics
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown id="colleges-nav" title="Colleges">
-              <NavDropdown.Item id="college-of-natural-sciences-nav" as={NavLink} to="/college-of-natural-sciences">
-                College of Natural Sciences
-              </NavDropdown.Item>
-            </NavDropdown>
+            {/* <NavDropdown id="colleges-nav" title="Colleges"> */}
+            {/*  <NavDropdown.Item id="college-of-natural-sciences-nav" as={NavLink} to="/college-of-natural-sciences"> */}
+            {/*    College of Natural Sciences */}
+            {/*  </NavDropdown.Item> */}
+            {/* </NavDropdown> */}
+            <Nav.Link id="ics-department-nav" as={NavLink} to="/ICSDepartment">
+              ICS Department
+            </Nav.Link>
             {currentUser ? ([
-              <Nav.Link id="my-interests-nav" as={NavLink} to="/my-interests">My Interests</Nav.Link>,
+              <Nav.Link id="my-interests-nav" as={NavLink} to="/my-interests">
+                My Interests
+              </Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
             ]) : ''}

@@ -15,7 +15,7 @@ const Department = () => (
       <Row>
         <Col>
           <Container className="container-borderC">
-            <div className="text-center pt-2">
+            <div className="text-center py-3">
               <img src="/images/GameDevLogo.jpg" alt="Grey Hats Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center">Game Dev</h4>
@@ -26,16 +26,19 @@ const Department = () => (
         </Col>
         <Col>
           <Container className="container-borderC">
-            <div className="text-center pt-2">
+            <div className="text-center py-3">
               <img src="/images/ACMImg.webp" alt="ACM Logo" className="box-img-sizeS" />
             </div>
-            <h4 className="text-center">Association for Computing Machinery at the University of Hawaii at Manoa</h4>
+            <h4 className="text-center">Association for Computing Machinery</h4>
             {/* eslint-disable-next-line max-len */}
             <p className="text-center">The Association for Computing Machinery at UH Manoa (ACManoa/ACM) is the largest computer science organization, welcoming all students of different backgrounds, interests, and skill levels. We are a registered student chapter of the International Association for Computing Machinery society. We fulfill our goals of providing social, professional, and technical enrichment for our members by providing various opportunities.</p>
           </Container>
         </Col>
         <Col>
           <Container className="container-borderC">
+            <div className="text-center py-3">
+              <img src="/images/BDCUHLogo.jpg" alt="BDCUH Logo" className="box-img-sizeS" />
+            </div>
             <h4 className="text-center">Ballroom Dance Club</h4>
             {/* eslint-disable-next-line max-len */}
             <p className="text-center">Did you know that the top Amateur Collegiate Ballroom Dancers in the USA in the past few years have been Computer Science majors working in the High Tech industry? Did you know that Carnegie Mellon University, Georgia Tech, the University of Minnesota and Purdue University are in the top 10 collegiate ballroom teams? (And many of the competitors are Computer Science and Engineering majors!)
@@ -60,12 +63,22 @@ const Department = () => (
         <Col>
           <Container className="container-borderR">
             <div className="text-center">
-              <img src="/images/peter-sadowski.jpg" alt="peter-sadowski" className="box-img-sizeP" />
-              <img src="/images/mamogram.jpg" alt="mamogram" className="box-img-sizeS" />
-              <img src="/images/medical.jpg" alt="medical" className="box-img-sizeS" />
-              <img src="/images/peter-washington.jpg" alt="peter-washington" className="box-img-sizeP" />
+              <Row className="py-4">
+                <Col>
+                  <img src="/images/peter-sadowski.jpg" alt="peter-sadowski" className="box-img-sizeP" />
+                </Col>
+                <Col>
+                  <img src="/images/mamogram.jpg" alt="mamogram" className="box-img-sizeS" />
+                </Col>
+                <Col>
+                  <img src="/images/medical.jpg" alt="medical" className="box-img-sizeS" />
+                </Col>
+                <Col>
+                  <img src="/images/peter-washington.jpg" alt="peter-washington" className="box-img-sizeP" />
+                </Col>
+              </Row>
             </div>
-            <h4 className="text-center">Medical Imaging</h4>
+            <h4 className="text-center pb-2">Medical Imaging</h4>
             {/* eslint-disable-next-line max-len */}
             <p className="text-center">Computer Science faculty Dr. Peter Washington and Dr. Peter Sadowski collaborated with Dr. John Shepherd at the UH Cancer Center to apply AI to medical imaging applications, including total-body DXA,breast cancer detection, and the Makawalu project which is developing a portable AI-based  ultrasound breast cancer screening tool.</p>
           </Container>
