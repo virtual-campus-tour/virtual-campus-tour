@@ -8,6 +8,7 @@ const SignOut = () => {
   return (
     <Container id="signout-page">
       <Col className="text-center py-3">
+        <h4>You are signed out!</h4>
         <h2>Thank you for visiting the University of Hawaii at Manoa Virtually</h2>
         <h3>We hope to see you in person soon!</h3>
       </Col>
