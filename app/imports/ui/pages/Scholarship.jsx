@@ -14,8 +14,8 @@ const Scholarship = () => (
         The New Warrior Scholarship consists of the following scholarships:
       </p>
       <ul>
-        <li>Regent's</li>
-        <li>Provost Achivement (formerly Chancellor's)</li>
+        <li>Regent&apos;s</li>
+        <li>Provost Achivement (formerly Chancellor&apos;s)</li>
         <li>Manoa Excellence</li>
         <li>Manoa International Excellence</li>
       </ul>
@@ -56,9 +56,9 @@ const Scholarship = () => (
       </ul>
     </Container>
     <Container className="small-spacer">
-      <h2>Kua&#39;ana Tuition Waiver</h2>
+      <h2>Kua&apos;ana Tuition Waiver</h2>
       <p>
-        The Kua&#39;ana Native Hawaiian Student Development Services provides need-based tuition waivers for undergraduate, and classified graduate Native Hawaiian students.
+        The Kua&apos;ana Native Hawaiian Student Development Services provides need-based tuition waivers for undergraduate, and classified graduate Native Hawaiian students.
       </p>
     </Container>
     <Container className="small-spacer">
