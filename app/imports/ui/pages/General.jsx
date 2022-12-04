@@ -1,5 +1,5 @@
 import React from 'react';
-import GeneralComp from '../components/General-comp.jsx'
+import GeneralComp from '../components/General-comp.jsx';
 
 const generalPage = () => (
   <GeneralComp />

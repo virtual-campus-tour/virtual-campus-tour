@@ -56,9 +56,9 @@ const Scholarship = () => (
       </ul>
     </Container>
     <Container className="small-spacer">
-      <h2>Kua'ana Tuition Waiver</h2>
+      <h2>Kua&#39;ana Tuition Waiver</h2>
       <p>
-        The Kua'ana Native Hawaiian Student Development Services provides need-based tuition waivers for undergraduate, and classified graduate Native Hawaiian students.
+        The Kua&#39;ana Native Hawaiian Student Development Services provides need-based tuition waivers for undergraduate, and classified graduate Native Hawaiian students.
       </p>
     </Container>
     <Container className="small-spacer">
