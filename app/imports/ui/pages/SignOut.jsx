@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Col, Container } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 /* After the user clicks the "SignOut" link in the NavBar, log them out and display this page. */
 const SignOut = () => {
@@ -11,9 +11,15 @@ const SignOut = () => {
         <h2>Thank you for visiting the University of Hawaii at Manoa Virtually</h2>
         <h3>We hope to see you in person soon!</h3>
       </Col>
-      <Col>
-        <h1>Go Rainbows!</h1>
+      <Col className="text-center py-3">
+        <h1 className="big-letters">Go Rainbows!</h1>
       </Col>
+      <img className="centered" src="/images/studentsUHM.png" alt="Students UHM" />
+      <Row className="mt-3">
+        <Button href="#" variant="green" className="btn btn-lg fs-2">
+          Book an In-Person Tour Now
+        </Button>
+      </Row>
     </Container>
   );
 };
