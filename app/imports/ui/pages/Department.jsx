@@ -37,7 +37,7 @@ const Department = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center py-3">
-              <img src="/images/BDCUHLogo.jpg" alt="BDCUH Logo" className="box-img-sizeS" />
+              <img src="/images/BDCUHLogo.png" alt="BDCUH Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center">Ballroom Dance Club</h4>
             {/* eslint-disable-next-line max-len */}
