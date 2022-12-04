@@ -176,3 +176,13 @@ a.nav-link{
 .big-letters {
   font-size: 130px;
 }
+
+.box-img-sizeLogo {
+  width: 200px;
+  height: 200px;
+}
+
+.box-img-sizeLogoBW {
+  width: 300px;
+  height: 300px;
+}
