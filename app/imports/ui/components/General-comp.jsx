@@ -14,14 +14,14 @@ const GeneralComp = () => (
           <h2 className="text-center">About the University of Hawaii</h2>
           <p>
             The University of Hawaii was founded in 1907 and in 1912 was relocated to Manoa Valley with Hawaii Hall being the first permanent building to be established.
-            Throughout the 1930s the University continued to grow ...
-            Currently, the university spans 320 acres and is home to over 18,000 students ...
+            Throughout the 1930s the University continued to grow and now has 10 campuses throughout the state of Hawaii.
+            Currently, the University of Hawaii spans 320 acres and is home to over 18,000 students that is very diversified.
           </p>
         </Col>
         <Col>
           <h2 className="text-center">Where to Find the University of Hawaii</h2>
           <p>
-            UH Manoa is located in the beautiful Manoa valley just outside of Honolulu on the island of Oahu. Only 15 minutes away from the beach by bus...
+            UH Manoa is located in the beautiful Manoa valley just outside of Honolulu on the island of Oahu. Only 15 minutes away from the beach by bus.
           </p>
         </Col>
       </Row>
