@@ -39,6 +39,9 @@ const NavBar = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown id="student-life-nav" title="Student Life">
+              <NavDropdown.Item id="dorming-nav" as={NavLink} to="/dorming">
+                Dorming
+              </NavDropdown.Item>
               <NavDropdown.Item id="dining-nav" as={NavLink} to="/dining">
                 Dining
               </NavDropdown.Item>
