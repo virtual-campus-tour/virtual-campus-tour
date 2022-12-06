@@ -22,6 +22,7 @@ import EditUser from '../pages/EditUser';
 import Scholarship from '../pages/Scholarship';
 import GeneralTour from '../pages/GeneralTour';
 import Athletics from '../pages/Athletics';
+import WarriorRecreationCenter from '../pages/WarriorRecreationCenter';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -36,6 +37,7 @@ const App = () => (
         <Route path="/Scholarship" element={<Scholarship />} />
         <Route path="/GeneralTour" element={<GeneralTour />} />
         <Route path="/Athletics" element={<Athletics />} />
+        <Route path="/warrior-recreation-center" element={<WarriorRecreationCenter />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
