@@ -24,8 +24,6 @@ import GeneralTour from '../pages/GeneralTour';
 import Athletics from '../pages/Athletics';
 import CampusCenter from '../pages/CampusCenter';
 import StudyAreas from '../pages/StudyAreas';
-import DormingTour from '../pages/DormingTour';
-import DiningTour from '../pages/DiningTour';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -37,8 +35,6 @@ const App = () => (
         <Route path="/ICSDepartment" element={<Department />} />
         <Route path="/dining" element={<Dining />} />
         <Route path="/Dorming" element={<Dorming />} />
-        <Route path="/DormingTour" element={<DormingTour />} />
-        <Route path="/DiningTour" element={<DiningTour />} />
         <Route path="/Scholarship" element={<Scholarship />} />
         <Route path="/GeneralTour" element={<GeneralTour />} />
         <Route path="/campuscenter" element={<CampusCenter />} />

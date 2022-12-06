@@ -8,7 +8,7 @@ const GeneralTour = () => (
     <GeneralComp />
     <Container>
       <Row className="mt-3">
-        <Button href="/DormingTour" variant="green" className="btn btn-lg fs-2" id="dorming-page-click">
+        <Button href="/dorming" variant="green" className="btn btn-lg fs-2" id="dorming-page-click">
           Next Page
         </Button>
       </Row>
