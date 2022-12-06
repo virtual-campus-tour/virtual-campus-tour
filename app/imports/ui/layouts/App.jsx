@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
-import AddStuff from '../pages/AddStuff';
 import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
 import SignOut from '../pages/SignOut';
@@ -24,6 +23,7 @@ import GeneralTour from '../pages/GeneralTour';
 import Athletics from '../pages/Athletics';
 import CampusCenter from '../pages/CampusCenter';
 import StudyAreas from '../pages/StudyAreas';
+import AddClubs from '../pages/AddClubs';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -46,8 +46,9 @@ const App = () => (
         <Route path="/general" element={<General />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/my-interests" element={<ProtectedRoute><MyInterests /></ProtectedRoute>} />
-        <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
+        <Route path="/add" element={<ProtectedRoute><AddClubs /></ProtectedRoute>} />
         <Route path="/edit/:email" element={<ProtectedRoute><EditUser /></ProtectedRoute>} />
+        <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />

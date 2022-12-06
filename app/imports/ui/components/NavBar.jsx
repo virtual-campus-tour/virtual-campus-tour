@@ -60,6 +60,9 @@ const NavBar = () => {
             <Nav.Link id="ics-department-nav" as={NavLink} to="/ICSDepartment">
               ICS Department
             </Nav.Link>
+            <Nav.Link id="add-clubs" as={NavLink} to="/add">
+              Add Clubs
+            </Nav.Link>
             {currentUser ? ([
               <Nav.Link id="my-interests-nav" as={NavLink} to="/my-interests">
                 My Interests
