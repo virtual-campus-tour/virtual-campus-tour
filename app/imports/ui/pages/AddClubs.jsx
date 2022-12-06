@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, TextField, SubmitField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, TextField, SubmitField, LongTextField } from 'uniforms-bootstrap5';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
@@ -46,9 +46,13 @@ const AddClub = () => {
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>
-                <TextField name="name" />
-                <TextField image="image" />
-                <TextField description="description" />
+                <Row>
+                  <Col><TextField nameOfClub="name" /></Col>
+                  <Col><TextField imageOfClub="image" /></Col>
+                </Row>
+                <Row>
+                  <Col><LongTextField descriptionOfClub="description" /></Col>
+                </Row>
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
