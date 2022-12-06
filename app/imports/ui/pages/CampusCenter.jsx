@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
-const Athletics = () => (
+const CampusCenter = () => (
   <Container id="campus-center">
     <div className="small-spacer">
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
@@ -40,4 +40,4 @@ const Athletics = () => (
   </Container>
 );
 
-export default Athletics;
+export default CampusCenter;
