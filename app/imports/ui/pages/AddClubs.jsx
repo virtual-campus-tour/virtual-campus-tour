@@ -21,10 +21,10 @@ const AddClubs = () => {
 
   // On submit, insert the data.
   const submit = (data, formRef) => {
-    const { name, quantity, condition } = data;
+    const { name, image, description } = data;
     const owner = Meteor.user().username;
     Clubs.collection.insert(
-      { name, quantity, condition, owner },
+      { name, image, description, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
