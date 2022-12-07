@@ -23,9 +23,6 @@ import GeneralTour from '../pages/GeneralTour';
 import Athletics from '../pages/Athletics';
 import CampusCenter from '../pages/CampusCenter';
 import StudyAreas from '../pages/StudyAreas';
-import EditClubs from '../pages/EditClubs';
-import ListClubs from '../pages/ListClubs';
-import WarriorRecreationCenter from '../pages/WarriorRecreationCenter';
 import AddClubs from '../pages/AddClubs';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -42,7 +39,6 @@ const App = () => (
         <Route path="/GeneralTour" element={<GeneralTour />} />
         <Route path="/campuscenter" element={<CampusCenter />} />
         <Route path="/Athletics" element={<Athletics />} />
-        <Route path="/warrior-recreation-center" element={<WarriorRecreationCenter />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/study-areas" element={<StudyAreas />} />
         <Route path="/signup" element={<SignUp />} />
@@ -54,8 +50,6 @@ const App = () => (
         <Route path="/edit/:email" element={<ProtectedRoute><EditUser /></ProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
-        <Route path="/editClubs" element={<ProtectedRoute><EditClubs /></ProtectedRoute>} />
-        <Route path="/listClubs" element={<ProtectedRoute><ListClubs /></ProtectedRoute>} />
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

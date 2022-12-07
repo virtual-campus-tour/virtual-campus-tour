@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, LongTextField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, TextField, SubmitField, LongTextField } from 'uniforms-bootstrap5';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
@@ -17,14 +17,13 @@ const formSchema = new SimpleSchema({
 const bridge = new SimpleSchema2Bridge(formSchema);
 
 /* Renders the AddStuff page for adding a document. */
-const AddClubs = () => {
+const AddClub = () => {
 
   // On submit, insert the data.
   const submit = (data, formRef) => {
     const { name, image, description } = data;
-    const owner = Meteor.user().username;
     Clubs.collection.insert(
-      { name, image, description, owner },
+      { name, image, description },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -41,14 +40,18 @@ const AddClubs = () => {
   return (
     <Container className="py-3">
       <Row className="justify-content-center">
-        <Col xs={5}>
+        <Col xs={10}>
           <Col className="text-center"><h2>Add Club</h2></Col>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>
-                <TextField name="name" />
-                <TextField name="image" />
-                <LongTextField name="description" />
+                <Row>
+                  <Col><TextField nameOfClub="name" /></Col>
+                  <Col><TextField imageOfClub="image" /></Col>
+                </Row>
+                <Row>
+                  <Col><LongTextField descriptionOfClub="description" /></Col>
+                </Row>
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
@@ -60,4 +63,4 @@ const AddClubs = () => {
   );
 };
 
-export default AddClubs;
+export default AddClub;
