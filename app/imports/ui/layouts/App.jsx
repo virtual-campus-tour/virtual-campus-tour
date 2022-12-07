@@ -24,6 +24,8 @@ import GeneralTour from '../pages/GeneralTour';
 import Athletics from '../pages/Athletics';
 import CampusCenter from '../pages/CampusCenter';
 import StudyAreas from '../pages/StudyAreas';
+import EditClubs from '../pages/EditClubs';
+import ListClubs from '../pages/ListClubs';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -49,6 +51,8 @@ const App = () => (
         <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
         <Route path="/edit/:email" element={<ProtectedRoute><EditUser /></ProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
+        <Route path="/editClubs" element={<ProtectedRoute><EditClubs /></ProtectedRoute>} />
+        <Route path="/listClubs" element={<ProtectedRoute><ListClubs /></ProtectedRoute>} />
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
