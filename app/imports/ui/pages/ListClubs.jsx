@@ -2,6 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Col, Container, Row, Table } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
+import { Roles } from 'meteor/alanning:roles';
 import { Clubs } from '../../api/club/Clubs';
 import ClubItem from '../components/ClubItem';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -36,7 +37,10 @@ const ListClubs = () => {
                 <th>Name</th>
                 <th>Image</th>
                 <th>Description</th>
-                <th>Edit</th>
+                {Roles.userIsInRole(Meteor.userId(), 'admin') ?
+                  (
+                    <th>Edit</th>
+                  ) : ''}
               </tr>
             </thead>
             <tbody>
