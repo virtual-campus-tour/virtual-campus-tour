@@ -23,6 +23,9 @@ import GeneralTour from '../pages/GeneralTour';
 import Athletics from '../pages/Athletics';
 import CampusCenter from '../pages/CampusCenter';
 import StudyAreas from '../pages/StudyAreas';
+import EditClubs from '../pages/EditClubs';
+import ListClubs from '../pages/ListClubs';
+import WarriorRecreationCenter from '../pages/WarriorRecreationCenter';
 import AddClubs from '../pages/AddClubs';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -39,6 +42,7 @@ const App = () => (
         <Route path="/GeneralTour" element={<GeneralTour />} />
         <Route path="/campuscenter" element={<CampusCenter />} />
         <Route path="/Athletics" element={<Athletics />} />
+        <Route path="/warrior-recreation-center" element={<WarriorRecreationCenter />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/study-areas" element={<StudyAreas />} />
         <Route path="/signup" element={<SignUp />} />
@@ -46,10 +50,12 @@ const App = () => (
         <Route path="/general" element={<General />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/my-interests" element={<ProtectedRoute><MyInterests /></ProtectedRoute>} />
-        <Route path="/add" element={<AdminProtectedRoute><AddClubs /></AdminProtectedRoute>} />
+        <Route path="/add" element={<ProtectedRoute><AddClubs /></ProtectedRoute>} />
         <Route path="/edit/:email" element={<ProtectedRoute><EditUser /></ProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
+        <Route path="/editClubs" element={<ProtectedRoute><EditClubs /></ProtectedRoute>} />
+        <Route path="/listClubs" element={<ProtectedRoute><ListClubs /></ProtectedRoute>} />
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
@@ -57,7 +63,6 @@ const App = () => (
     </div>
   </Router>
 );
-
 /*
  * ProtectedRoute (see React Router v6 sample)
  * Checks for Meteor login before routing to the requested page, otherwise goes to signin page.
@@ -67,7 +72,6 @@ const ProtectedRoute = ({ children }) => {
   const isLogged = Meteor.userId() !== null;
   return isLogged ? children : <Navigate to="/signin" />;
 };
-
 /**
  * AdminProtectedRoute (see React Router v6 sample)
  * Checks for Meteor login and admin role before routing to the requested page, otherwise goes to signin page.
@@ -81,23 +85,18 @@ const AdminProtectedRoute = ({ children }) => {
   const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
   return (isLogged && isAdmin) ? children : <Navigate to="/notauthorized" />;
 };
-
 // Require a component and location to be passed to each ProtectedRoute.
 ProtectedRoute.propTypes = {
   children: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
 };
-
 ProtectedRoute.defaultProps = {
   children: <Landing />,
 };
-
 // Require a component and location to be passed to each AdminProtectedRoute.
 AdminProtectedRoute.propTypes = {
   children: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
 };
-
 AdminProtectedRoute.defaultProps = {
   children: <Landing />,
 };
-
 export default App;
