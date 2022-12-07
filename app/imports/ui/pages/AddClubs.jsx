@@ -46,11 +46,11 @@ const AddClub = () => {
             <Card>
               <Card.Body>
                 <Row>
-                  <Col><TextField nameOfClub="name" /></Col>
-                  <Col><TextField imageOfClub="image" /></Col>
+                  <Col><TextField name="name" /></Col>
+                  <Col><TextField name="image" /></Col>
                 </Row>
                 <Row>
-                  <Col><LongTextField descriptionOfClub="description" /></Col>
+                  <Col><LongTextField name="description" /></Col>
                 </Row>
                 <SubmitField value="Submit" />
                 <ErrorsField />

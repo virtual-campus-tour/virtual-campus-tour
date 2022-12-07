@@ -8,7 +8,7 @@ const Club = ({ club }) => (
     <td><img src={club.image} alt="peter-sadowski" className="box-img-sizeP" /></td>
     <td>{club.description}</td>
     <td>
-      <Link to={`/edit/${club._id}`}>Edit</Link>
+      <Link to={`/editClubs/${club._id}`}>Edit</Link>
     </td>
   </tr>
 );

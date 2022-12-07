@@ -47,11 +47,10 @@ const EditClubs = () => {
             <Card>
               <Card.Body>
                 <TextField name="name" />
-                <TextField image="image" />
-                <TextField description="description" />
+                <TextField name="image" />
+                <TextField name="description" />
                 <SubmitField value="Submit" />
                 <ErrorsField />
-                <HiddenField name="owner" />
               </Card.Body>
             </Card>
           </AutoForm>
