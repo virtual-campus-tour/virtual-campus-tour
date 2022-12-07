@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { Col, Container, Row, Table } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Clubs } from '../../api/club/Clubs';
-import ClubItem from '../components/Club';
+import ClubItem from '../components/ClubItem';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 /* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -28,7 +28,7 @@ const ListClubs = () => {
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">
-            <h2>List Stuff</h2>
+            <h2>List Clubs</h2>
           </Col>
           <Table striped bordered hover>
             <thead>
