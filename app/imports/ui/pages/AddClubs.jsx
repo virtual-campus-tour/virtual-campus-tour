@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { AutoForm, ErrorsField, TextField, SubmitField, LongTextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, LongTextField, SubmitField, TextField } from 'uniforms-bootstrap5';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
@@ -17,13 +17,14 @@ const formSchema = new SimpleSchema({
 const bridge = new SimpleSchema2Bridge(formSchema);
 
 /* Renders the AddStuff page for adding a document. */
-const AddClub = () => {
+const AddClubs = () => {
 
   // On submit, insert the data.
   const submit = (data, formRef) => {
-    const { name, image, description } = data;
+    const { name, quantity, condition } = data;
+    const owner = Meteor.user().username;
     Clubs.collection.insert(
-      { name, image, description },
+      { name, quantity, condition, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -40,18 +41,14 @@ const AddClub = () => {
   return (
     <Container className="py-3">
       <Row className="justify-content-center">
-        <Col xs={10}>
+        <Col xs={5}>
           <Col className="text-center"><h2>Add Club</h2></Col>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>
-                <Row>
-                  <Col><TextField nameOfClub="name" /></Col>
-                  <Col><TextField imageOfClub="image" /></Col>
-                </Row>
-                <Row>
-                  <Col><LongTextField descriptionOfClub="description" /></Col>
-                </Row>
+                <TextField name="name" />
+                <TextField name="image" />
+                <LongTextField name="description" />
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
@@ -63,4 +60,4 @@ const AddClub = () => {
   );
 };
 
-export default AddClub;
+export default AddClubs;
