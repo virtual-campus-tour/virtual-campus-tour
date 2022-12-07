@@ -34,7 +34,7 @@ const App = () => (
         <Route exact path="/" element={<Landing />} />
         <Route path="/ICSDepartment" element={<Department />} />
         <Route path="/dining" element={<Dining />} />
-        <Route path="/Dorming" element={<Dorming />} />
+        <Route path="/Dorming!" element={<Dorming />} />
         <Route path="/Scholarship" element={<Scholarship />} />
         <Route path="/GeneralTour" element={<GeneralTour />} />
         <Route path="/campuscenter" element={<CampusCenter />} />
