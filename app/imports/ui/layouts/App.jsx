@@ -26,6 +26,7 @@ import CampusCenter from '../pages/CampusCenter';
 import StudyAreas from '../pages/StudyAreas';
 import EditClubs from '../pages/EditClubs';
 import ListClubs from '../pages/ListClubs';
+import WarriorRecreationCenter from '../pages/WarriorRecreationCenter';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -41,6 +42,7 @@ const App = () => (
         <Route path="/GeneralTour" element={<GeneralTour />} />
         <Route path="/campuscenter" element={<CampusCenter />} />
         <Route path="/Athletics" element={<Athletics />} />
+        <Route path="/warrior-recreation-center" element={<WarriorRecreationCenter />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/study-areas" element={<StudyAreas />} />
         <Route path="/signup" element={<SignUp />} />
