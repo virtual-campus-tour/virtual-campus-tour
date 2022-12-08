@@ -24,6 +24,7 @@ import GeneralTour from '../pages/GeneralTour';
 import Athletics from '../pages/Athletics';
 import CampusCenter from '../pages/CampusCenter';
 import StudyAreas from '../pages/StudyAreas';
+import PostBuilding from '../pages/PostBuilding';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -44,6 +45,7 @@ const App = () => (
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/general" element={<General />} />
+        <Route path="/post-building" element={<PostBuilding />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/my-interests" element={<ProtectedRoute><MyInterests /></ProtectedRoute>} />
         <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
