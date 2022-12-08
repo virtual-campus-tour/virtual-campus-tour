@@ -32,6 +32,14 @@
     {
       "name": "BDCUH", "image": "/images/BDCUHLogo.png",
       "description": "Did you know that the top Amateur Collegiate Ballroom Dancers in the USA in the past few years have been Computer Science majors working in the High Tech industry? Did you know that Carnegie Mellon University, Georgia Tech, the University of Minnesota and Purdue University are in the top 10 collegiate ballroom teams? (And many of the competitors are Computer Science and Engineering majors!)\n \nThe Ballroom Dance Club at the University of Hawaii at Manoa just started in Fall 2022! We teach both social dance as well as competitive dance. We meet on most Tuesday evenings in the Athletic Department Studio 3. No dance experience is needed, and classes are free.\n"
+    },
+    {
+      "name": "Grey Hats", "image": "/images/GHImg.webp",
+      "description": "Grey Hats is cyber-security club that facilitates the sharing of cyber-security concepts through fellowship. Grey Hats participates in several cyber-security competitions throughout the school year along with maintaining an active student ran server."
+    },
+    {
+      "name": "PANDA", "image": "/images/PandasIMg.webp",
+      "description": "PANDA is an algorithmic club that assists in facilitating learning of algorithmic concepts."
     }
   ]
 }

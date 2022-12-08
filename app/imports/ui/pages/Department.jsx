@@ -11,7 +11,6 @@ const Department = () => (
     </div>
     <Container>
       <h2 className="text-center pb-3 pt-5">Clubs</h2>
-
       <Row>
         <Col>
           <Container className="container-borderC">
@@ -46,6 +45,43 @@ const Department = () => (
           </Container>
         </Col>
       </Row>
+      <div className="small-spacer" />
+      <Row>
+        <Col>
+          <Container className="container-borderC">
+            <div className="text-center py-3">
+              <img src="/images/SWITCHLogo.png" alt="Switch Logo" className="box-img-sizeS" />
+            </div>
+            <h4 className="text-center">SWITCH</h4>
+            {/* eslint-disable-next-line max-len */}
+            <p className="text-center">SWITCH stands for Supporting Women in Technology and Computing Hawaii. We are dedicated to supporting women and minorities, promoting gender and racial equality, facilitating professional, technical & personal development events, creating an environment and atmosphere where women can feel safe, preventing violence against women by raising awareness of campus resources, and provide an overall sense of community.
+            </p>
+          </Container>
+        </Col>
+        <Col>
+          <Container className="container-borderC">
+            <div className="text-center py-3">
+              <img src="/images/GHImg.webp" alt="Switch Logo" className="box-img-sizeS" />
+            </div>
+            <h4 className="text-center">Grey Hats</h4>
+            {/* eslint-disable-next-line max-len */}
+            <p className="text-center">Grey Hats is cyber-security club that facilitates the sharing of cyber-security concepts through fellowship. Grey Hats participates in several cyber-security competitions throughout the school year along with maintaining an active student ran server.
+            </p>
+          </Container>
+        </Col>
+        <Col>
+          <Container className="container-borderC">
+            <div className="text-center py-3">
+              <img src="/images/PandasImg.webp" alt="Switch Logo" className="box-img-sizeS" />
+            </div>
+            <h4 className="text-center">PANDA</h4>
+            {/* eslint-disable-next-line max-len */}
+            <p className="text-center">PANDA is an algorithmic club that assists in facilitating learning of algorithmic concepts.
+            </p>
+          </Container>
+        </Col>
+      </Row>
+
     </Container>
     <Container className="dept-spacer pb-5">
       <h2 className="text-center pb-3">Research</h2>
