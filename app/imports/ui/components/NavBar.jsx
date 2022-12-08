@@ -77,7 +77,7 @@ const NavBar = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item id="list-club" as={NavLink} to="/listClubs">
                   List of Club
-                </NavDropdown.Item>,
+                </NavDropdown.Item>
               </NavDropdown>,
             ]) : ''}
           </Nav>
