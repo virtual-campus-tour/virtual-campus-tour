@@ -28,6 +28,7 @@ import WarriorRecreationCenter from '../pages/WarriorRecreationCenter';
 import AddClubs from '../pages/AddClubs';
 import DormingTour from '../pages/DormingTour';
 import DiningTour from '../pages/DiningTour';
+import TourEnd from '../pages/TourEnd';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -51,6 +52,7 @@ const App = () => (
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/general" element={<General />} />
+        <Route path="/tourend" element={<TourEnd />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/my-interests" element={<ProtectedRoute><MyInterests /></ProtectedRoute>} />
         <Route path="/add" element={<ProtectedRoute><AddClubs /></ProtectedRoute>} />
