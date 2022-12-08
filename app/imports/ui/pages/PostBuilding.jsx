@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 
 const PostBuilding = () => (
   <Container>
-    <h1 id="center"> POST Building</h1>
+    <h1 className="text-center"> Pacific Ocean Science Technology Building</h1>
     <Row>
       <img className="general-image centered" src="/images/POST-Building-Image.png" alt="POST Building" />
     </Row>
