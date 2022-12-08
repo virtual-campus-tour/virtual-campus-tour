@@ -28,6 +28,7 @@ import WarriorRecreationCenter from '../pages/WarriorRecreationCenter';
 import AddClubs from '../pages/AddClubs';
 import DormingTour from '../pages/DormingTour';
 import DiningTour from '../pages/DiningTour';
+import Classrooms from '../pages/Classrooms';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -37,6 +38,7 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route path="/ICSDepartment" element={<Department />} />
+        <Route path="Classrooms" element={<Classrooms />} />
         <Route path="/dining" element={<Dining />} />
         <Route path="/Dorming" element={<Dorming />} />
         <Route path="/DormingTour" element={<DormingTour />} />
