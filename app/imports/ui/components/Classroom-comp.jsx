@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Carousel, Container } from 'react-bootstrap';
 
 const ClassroomComp = () => (
 
@@ -9,40 +9,17 @@ const ClassroomComp = () => (
 
     <p className="text-center">UH Manoa is host to a bunch of modern classrooms</p>
 
-    <Container className="small-spacer">
-
-      <Container>
-        <Row>
-          <Col>
-            <h2 className="text-center">Classes</h2>
-          </Col>
-          <Col>
-            <img className="class-format centered" src="/images/web101.jpg" alt="Webster Hall" />
-          </Col>
-        </Row>
-      </Container>
-      <Container className="small-spacer">
-        <Row>
-          <Col>
-            <img className="class-format centered" src="/images/moore228.jpg" alt="Moore Hall" />
-          </Col>
-          <Col>
-            <h2 className="text-center">More About Classes</h2>
-          </Col>
-        </Row>
-      </Container>
-      <Container className="small-spacer">
-        <Row>
-          <Col>
-            <h2 className="text-center">Labs</h2>
-          </Col>
-          <Col>
-            <img className="class-format centered" src="/images/BIL-337-lab.jpg" alt="Bilger Lab" />
-          </Col>
-        </Row>
-      </Container>
-
-    </Container>
+    <Carousel className="small-spacer">
+      <Carousel.Item>
+        <img className="class-photo centered" src="/images/web101.jpg" alt="Webster Hall" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="class-photo centered" src="/images/moore228.jpg" alt="Moore Hall" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="class-photo centered" src="/images/BIL-337-lab.jpg" alt="Bilger Lab" />
+      </Carousel.Item>
+    </Carousel>
 
   </Container>
 
