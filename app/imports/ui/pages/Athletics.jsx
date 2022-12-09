@@ -33,16 +33,16 @@ const Athletics = () => (
           <h3>Golf</h3>
         </Col>
         <Col className="center">
-          <img src="/images/women-sailing.png" alt="women-sailing" className="center-image-athletics" />
-          <h3>Sailing</h3>
-        </Col>
-        <Col className="center">
           <img src="/images/women-soccer.png" alt="women-soccer" className="center-image-athletics" />
           <h3>Soccer</h3>
         </Col>
         <Col className="center">
           <img src="/images/women-softball.png" alt="women-softball" className="center-image-athletics" />
           <h3>Softball</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/women-sailing.png" alt="women-sailing" className="center-image-athletics" />
+          <h3>Sailing</h3>
         </Col>
         <Col className="center">
           <img src="/images/women-swimming.png" alt="women-swimming" className="center-image-athletics" />
@@ -72,22 +72,53 @@ const Athletics = () => (
         </Col>
       </Row>
       <Row>
-        <Col className="text-center">
-          <h2>CO-ED SPORTS</h2>
+        <h2 className="center">CO-ED SPORTS</h2>
+        <Col className="center">
+          <img src="/images/uhm-cheerleading.png" alt="uhm-cheerleading" className="center-image-athletics-middle" />
+          <img src="/images/uhm-cheer.png" alt="uhm-cheerleading" className="center-image-athletics" />
           <h3>Cheerleading</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/rainbow-sailing.png" alt="sailing" className="center-image-athletics-middle" />
+          <img src="/images/uhm-sailing.png" alt="coed-sailing" className="center-image-athletics" />
           <h3>Sailing</h3>
         </Col>
-        <Col>
-          <Row>
-            <h2>MEN SPORTS</h2>
-            <h3>Baseball</h3>
-            <h3>Basketball</h3>
-            <h3>Football</h3>
-            <h3>Golf</h3>
-            <h3>Swimming & Diving</h3>
-            <h3>Tennis</h3>
-            <h3>Volleyball</h3>
-          </Row>
+      </Row>
+      <Row>
+        <h2 className="center">MEN SPORTS</h2>
+        <Col className="center">
+          <img src="/images/men-baseball.png" alt="men-baseball" className="center-image-athletics" />
+          <h3>Baseball</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/men-baskeball.png" alt="men-basketball" className="center-image-athletics" />
+          <h3>Basketball</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/men-football.png" alt="men-football" className="center-image-athletics" />
+          <h3>Football</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/men-golf.png" alt="men-golf" className="center-image-athletics" />
+          <h3>Golf</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/men-swimming.png" alt="men-swimming" className="center-image-athletics" />
+          <h3>Swimming & Diving</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/rainbows.png" alt="rainbows" className="center-image-athletics" />
+        </Col>
+        <Col className="center">
+          <img src="/images/men-tennis.png" alt="men-tennis" className="center-image-athletics" />
+          <h3>Tennis</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/men-volleyball.png" alt="men-volleyball" className="center-image-athletics" />
+          <h3>Volleyball</h3>
+        </Col>
+        <Col className="center">
+          <img src="/images/rainbows.png" alt="rainbows" className="center-image-athletics" />
         </Col>
       </Row>
       <Row>
