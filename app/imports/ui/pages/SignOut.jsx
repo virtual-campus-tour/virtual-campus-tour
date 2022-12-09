@@ -17,7 +17,7 @@ const SignOut = () => {
       </Col>
       <img className="centered" src="/images/studentsUHM.png" alt="Students UHM" />
       <Row className="mt-3">
-        <Button href="https://manoa.hawaii.edu/admissions/visit/" variant="green" className="btn btn-lg fs-2" >
+        <Button href="https://manoa.hawaii.edu/admissions/visit/" variant="green" className="btn btn-lg fs-2">
           Book an In-Person Tour Now
         </Button>
       </Row>
