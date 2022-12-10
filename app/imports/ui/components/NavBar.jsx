@@ -34,7 +34,7 @@ const NavBar = () => {
               <NavDropdown.Item id="classrooms-nav" as={NavLink} to="/Classrooms">
                 Classrooms
               </NavDropdown.Item>
-              <NavDropdown.Item id="book-a-tour-nav" as={NavLink} to="/book-a-tour">
+              <NavDropdown.Item id="book-a-tour-nav" href="https://manoa.hawaii.edu/admissions/visit/">
                 Book A Tour
               </NavDropdown.Item>
             </NavDropdown>
