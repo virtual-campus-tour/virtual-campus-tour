@@ -76,7 +76,7 @@ const DeptComp = () => (
             </div>
             <h4 className="text-center">PANDA</h4>
             {/* eslint-disable-next-line max-len */}
-            <p className="text-center">PANDA is an algorithmic club that assists in facilitating learning of algorithmic concepts.
+            <p className="text-center">PANDA known as the programming and algorithm club, helps students develop the algorithmic problem solving skills needed to succeed in the field of computer science. We have weekly meetings with questions tailored to preparing for technical interviews. Content is between ICS 211 - ICS 311, but all are welcome!
             </p>
           </Container>
         </Col>
