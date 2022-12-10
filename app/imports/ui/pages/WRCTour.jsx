@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
-import DiningComp from '../components/Dining-comp';
+import WRCComp from '../components/WRC-comp';
 
-const DiningTour = () => (
+const WRCTour = () => (
 
   <>
-    <DiningComp />
+    <WRCComp />
     <Container>
       <Row className="mt-3">
-        <Button href="/ClassroomTour" variant="green" className="btn btn-lg fs-2">
+        <Button href="/AthleticsTour" variant="green" className="btn btn-lg fs-2">
           Next Page
         </Button>
       </Row>
@@ -17,4 +17,4 @@ const DiningTour = () => (
 
 );
 
-export default DiningTour;
+export default WRCTour;

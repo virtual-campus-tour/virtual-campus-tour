@@ -29,6 +29,11 @@ import AddClubs from '../pages/AddClubs';
 import DormingTour from '../pages/DormingTour';
 import DiningTour from '../pages/DiningTour';
 import Classrooms from '../pages/Classrooms';
+import ClassroomTour from '../pages/ClassroomTour';
+import WRCTour from '../pages/WRCTour';
+import AthleticsTour from '../pages/AthleticsTour';
+import ScholarshipTour from '../pages/ScholarshipTour';
+import DeptTour from '../pages/DeptTour';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -38,16 +43,21 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route path="/ICSDepartment" element={<Department />} />
+        <Route path="/DeptTour" element={<DeptTour />} />
         <Route path="Classrooms" element={<Classrooms />} />
+        <Route path="/ClassroomTour" element={<ClassroomTour />} />
         <Route path="/dining" element={<Dining />} />
         <Route path="/Dorming" element={<Dorming />} />
         <Route path="/DormingTour" element={<DormingTour />} />
         <Route path="/DiningTour" element={<DiningTour />} />
         <Route path="/Scholarship" element={<Scholarship />} />
+        <Route path="/ScholarshipTour" element={<ScholarshipTour />} />
         <Route path="/GeneralTour" element={<GeneralTour />} />
         <Route path="/campuscenter" element={<CampusCenter />} />
         <Route path="/Athletics" element={<Athletics />} />
+        <Route path="/AthleticsTour" element={<AthleticsTour />} />
         <Route path="/warrior-recreation-center" element={<WarriorRecreationCenter />} />
+        <Route path="/WRCTour" element={<WRCTour />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/study-areas" element={<StudyAreas />} />
         <Route path="/signup" element={<SignUp />} />

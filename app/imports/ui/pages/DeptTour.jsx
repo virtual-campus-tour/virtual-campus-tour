@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
-import DiningComp from '../components/Dining-comp';
+import DeptComp from '../components/Dept-comp';
 
-const DiningTour = () => (
+const DeptTour = () => (
 
   <>
-    <DiningComp />
+    <DeptComp />
     <Container>
       <Row className="mt-3">
-        <Button href="/ClassroomTour" variant="green" className="btn btn-lg fs-2">
+        <Button href="/ScholarshipTour" variant="green" className="btn btn-lg fs-2">
           Next Page
         </Button>
       </Row>
@@ -17,4 +17,4 @@ const DiningTour = () => (
 
 );
 
-export default DiningTour;
+export default DeptTour;
