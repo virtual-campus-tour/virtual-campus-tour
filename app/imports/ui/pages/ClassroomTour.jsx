@@ -14,7 +14,7 @@ const ClassroomTour = () => (
           </Button>
         </Col>
         <Col className="center">
-          <Button href="/WRCTour" variant="green" className="btn btn-lg fs-2" id="dorming-page-click">
+          <Button href="/CampusCenterTour" variant="green" className="btn btn-lg fs-2" id="CampusCenterTour-page-click">
             Next Page
           </Button>
         </Col>

@@ -37,6 +37,7 @@ import DeptTour from '../pages/DeptTour';
 import TourEnd from '../pages/TourEnd';
 import Admission from '../pages/Admission';
 import AdmissionTour from '../pages/AdmissionTour';
+import CampusCenterTour from '../pages/CampusCenterTour';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -51,6 +52,7 @@ const App = () => (
         <Route path="/AdmissionTour" element={<AdmissionTour />} />
         <Route path="Classrooms" element={<Classrooms />} />
         <Route path="/ClassroomTour" element={<ClassroomTour />} />
+        <Route path="/CampusCenterTour" element={<CampusCenterTour />} />
         <Route path="/dining" element={<Dining />} />
         <Route path="/Dorming" element={<Dorming />} />
         <Route path="/DormingTour" element={<DormingTour />} />
@@ -58,7 +60,7 @@ const App = () => (
         <Route path="/Scholarship" element={<Scholarship />} />
         <Route path="/ScholarshipTour" element={<ScholarshipTour />} />
         <Route path="/GeneralTour" element={<GeneralTour />} />
-        <Route path="/campuscenter" element={<CampusCenter />} />
+        <Route path="/CampusCenter" element={<CampusCenter />} />
         <Route path="/Athletics" element={<Athletics />} />
         <Route path="/AthleticsTour" element={<AthleticsTour />} />
         <Route path="/warrior-recreation-center" element={<WarriorRecreationCenter />} />

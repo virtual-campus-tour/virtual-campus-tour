@@ -51,6 +51,9 @@ const NavBar = () => {
               <NavDropdown.Item id="study-areas-nav" as={NavLink} to="/study-areas">
                 Study Areas
               </NavDropdown.Item>
+              <NavDropdown.Item id="CampusCenter-areas-nav" as={NavLink} to="/CampusCenter">
+                Campus Center
+              </NavDropdown.Item>
               <NavDropdown.Item id="wrc-nav" as={NavLink} to="/warrior-recreation-center">
                 Warrior Recreation Center
               </NavDropdown.Item>
