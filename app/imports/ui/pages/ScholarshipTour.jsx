@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Row } from 'react-bootstrap';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import ScholarshipComp from '../components/Scholarship-comp';
 
 const ScholarshipTour = () => (
@@ -8,9 +8,16 @@ const ScholarshipTour = () => (
     <ScholarshipComp />
     <Container>
       <Row className="mt-3">
-        <Button href="#" variant="green" className="btn btn-lg fs-2">
-          Next Page
-        </Button>
+        <Col className="center">
+          <Button href="/AdmissionTour" variant="green" className="btn btn-lg fs-2">
+            Previous Page
+          </Button>
+        </Col>
+        <Col className="center">
+          <Button href="/TourEnd" variant="green" className="btn btn-lg fs-2">
+            Finish Tour
+          </Button>
+        </Col>
       </Row>
     </Container>
 
