@@ -212,3 +212,11 @@ a.nav-link{
   height: 100px;
   margin-right: 20px;
 }
+
+.center-diagram {
+  width: 400px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
