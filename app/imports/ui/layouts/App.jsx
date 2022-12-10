@@ -39,6 +39,8 @@ import Admission from '../pages/Admission';
 import AdmissionTour from '../pages/AdmissionTour';
 import CampusCenterTour from '../pages/CampusCenterTour';
 import PostBuilding from '../pages/PostBuilding';
+import POSTTour from '../pages/POSTTour';
+import StudyAreasTour from '../pages/StudyAreasTour';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -68,11 +70,13 @@ const App = () => (
         <Route path="/WRCTour" element={<WRCTour />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/study-areas" element={<StudyAreas />} />
+        <Route path="/StudyAreasTour" element={<StudyAreasTour />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/general" element={<General />} />
         <Route path="/tourend" element={<TourEnd />} />
         <Route path="/post-building" element={<PostBuilding />} />
+        <Route path="/POSTTour" element={<POSTTour />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/my-interests" element={<ProtectedRoute><MyInterests /></ProtectedRoute>} />
         <Route path="/add" element={<ProtectedRoute><AddClubs /></ProtectedRoute>} />
