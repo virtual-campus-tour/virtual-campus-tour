@@ -160,6 +160,10 @@ a.nav-link{
   width: 80%;
 }
 
+.tiny-spacer {
+  margin-top: 25px;
+}
+
 .small-spacer {
   margin-top: 50px
 }
