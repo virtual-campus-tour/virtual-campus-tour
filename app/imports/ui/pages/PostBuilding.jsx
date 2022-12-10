@@ -2,12 +2,21 @@ import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 
 const PostBuilding = () => (
-  <Container>
-    <h1 className="text-center"> Pacific Ocean Science Technology Building</h1>
+  <Container className="small-spacer">
     <Row>
-      <img className="general-image centered" src="/images/POST-Building-Image.png" alt="POST Building" />
+      <Container className="small-spacer">
+        <Row>
+          <Col>
+            <img className="image-fill general-image centered" src="/images/POST-Building-Image.png" alt="POST Building" />
+          </Col>
+          <Col>
+            <img className="image-fill general-image centered" src="/images/post-angled" alt="Post Angled" />
+          </Col>
+        </Row>
+      </Container>
     </Row>
-    <Row>
+    <Container className="small-spacer">
+      <h1>Pacific Ocean Science Technology Building</h1>
       <Col>
         <p>
           As a leading campus in STEM, our Pacific, Ocean, Science and Technology building, commonly referred to as POST. Features our Hawai’i Space Flight laboratory and planetarium.
@@ -22,7 +31,7 @@ const PostBuilding = () => (
           With new engineering science degrees offered in concentration focuses in biomedical and aeronautical engineering, our STEM programs are providing opportunities of the next generation.
         </p>
       </Col>
-    </Row>
+    </Container>
     <Row>
       <Button href="#" variant="green" className="btn btn-lg fs-2">
         Next Page

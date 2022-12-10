@@ -201,3 +201,13 @@ a.nav-link{
   width: 250px;
   height: 400px;
 }
+
+.image-fill {
+  image: cover;
+  width: 508px;
+  height: 339px;
+}
+
+.small-spacer-bottom {
+  margin-bottom: 50px;
+}
