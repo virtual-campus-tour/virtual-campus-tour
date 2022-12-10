@@ -7,7 +7,7 @@ const ClassroomComp = () => (
 
     <h1 className="text-center">Classrooms</h1>
 
-    <p className="text-center">UH Manoa is host to a bunch of modern classrooms</p>
+    <p className="center-text-below-header">The University of Hawaii at Manoa, has numerous innovative classrooms that provide students with the best environments to thrive.</p>
 
     <Carousel className="small-spacer">
       <Carousel.Item>
@@ -20,7 +20,7 @@ const ClassroomComp = () => (
         <img className="class-photo centered" src="/images/BIL-337-lab.jpg" alt="Bilger Lab" />
       </Carousel.Item>
     </Carousel>
-
+    <p className="center-text-below-header">These classrooms assist students to be able to learn in the most effective and efficient manner for courses</p>
   </Container>
 
 );
