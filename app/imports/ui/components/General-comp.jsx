@@ -2,8 +2,8 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const GeneralComp = () => (
-  <Container id="general-page">
-    <div className="small-spacer">
+  <>
+    <div className="small-spacer" id="general-page">
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <img className="general-image centered" src="/images/UH-top.jpg" alt="Main Image" />
     </div>
@@ -35,8 +35,7 @@ const GeneralComp = () => (
       <h3 className="text-center">Maluna aʻe o nā lāhui a pau ke ola ke kanaka</h3>
       <h3 className="text-center">(Above all nations is humanity)</h3>
     </Container>
-
-  </Container>
+  </>
 );
 
 export default GeneralComp;
