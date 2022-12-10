@@ -19,6 +19,9 @@ const ClassroomComp = () => (
       <Carousel.Item>
         <img className="class-photo centered" src="/images/BIL-337-lab.jpg" alt="Bilger Lab" />
       </Carousel.Item>
+      <Carousel.Item>
+        <img className="class-photo centered" src="/images/arch205.jpg" alt="Architecture Lecture Hall" />
+      </Carousel.Item>
     </Carousel>
 
   </Container>
