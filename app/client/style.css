@@ -164,6 +164,10 @@ a.nav-link{
   margin-top: 50px
 }
 
+.small-spacer-bottom {
+  margin-bottom: 50px;
+}
+
 .half-spacer {
   margin-top: 200px;
 }
@@ -225,9 +229,30 @@ a.nav-link{
 }
 
 .center-diagram {
-  width: 400px;
-  height: 200px;
+  width: 972px;
+  height: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.table-size {
+  width: 100%;
+  font-size: 24px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.admiss-icon {
+
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 32px;
+  color: #024731;
+}
+
+.font-larger {
+  font-size: 24px;
 }

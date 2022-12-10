@@ -31,9 +31,6 @@ const GeneralComp = () => (
     <Row>
       <h2 className="text-center">Undergraduate Diversity</h2>
       <Col>
-        <div className="small-spacer" />
-        <div className="small-spacer" />
-        <div className="small-spacer" />
         <img className="center-diagram" src="/images/Undergraduate-Diversity.png" alt="Diversity" />
       </Col>
       <Col>
