@@ -12,11 +12,13 @@ const ScholarshipTour = () => (
           <Button href="/AdmissionTour" variant="green" className="btn btn-lg fs-2">
             Previous Page
           </Button>
+          <div className="small-spacer" />
         </Col>
         <Col className="center">
           <Button href="/TourEnd" variant="green" className="btn btn-lg fs-2">
             Finish Tour
           </Button>
+          <div className="small-spacer" />
         </Col>
       </Row>
     </Container>

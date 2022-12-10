@@ -11,6 +11,7 @@ const GeneralTour = () => (
         <Button href="/DormingTour" variant="green" className="btn btn-lg fs-2" id="dorming-page-click">
           Next Page
         </Button>
+        <div className="small-spacer" />
       </Row>
     </Container>
 

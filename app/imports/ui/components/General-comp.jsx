@@ -53,6 +53,7 @@ const GeneralComp = () => (
     <Container className="small-spacer">
       <h3 className="text-center">Maluna aʻe o nā lāhui a pau ke ola ke kanaka</h3>
       <h3 className="text-center">(Above all nations is humanity)</h3>
+      <div className="small-spacer" />
     </Container>
   </>
 );
