@@ -12,7 +12,7 @@ const Footer = () => (
           Improving lives through education and research
         </Col>
         <Col md="auto" className="justify-content-end">
-          <Button variant="green" className="fs-4">Apply Now</Button>{' '}
+          <Button variant="green" className="fs-4" href="https://manoa.hawaii.edu/admissions/apply/">Apply Now</Button>{' '}
         </Col>
       </Row>
     </Container>
