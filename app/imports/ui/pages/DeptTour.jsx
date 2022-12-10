@@ -8,7 +8,7 @@ const DeptTour = () => (
     <DeptComp />
     <Container>
       <Row className="mt-3">
-        <Button href="/ScholarshipTour" variant="green" className="btn btn-lg fs-2">
+        <Button href="/AdmissionTour" variant="green" className="btn btn-lg fs-2">
           Next Page
         </Button>
       </Row>
