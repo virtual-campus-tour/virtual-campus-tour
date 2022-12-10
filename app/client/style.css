@@ -208,6 +208,7 @@ a.nav-link{
 }
 
 .center-text-below-header {
+  margin-top: 25px;
   text-align: center;
   font-size: 30px;
 }
