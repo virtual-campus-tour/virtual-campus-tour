@@ -160,6 +160,10 @@ a.nav-link{
   width: 80%;
 }
 
+.tiny-spacer {
+  margin-top: 25px;
+}
+
 .small-spacer {
   margin-top: 50px
 }
@@ -255,4 +259,14 @@ a.nav-link{
 
 .font-larger {
   font-size: 24px;
+}
+
+.image-fill {
+  image: cover;
+  width: 508px;
+  height: 339px;
+}
+
+.small-spacer-bottom {
+  margin-bottom: 50px;
 }

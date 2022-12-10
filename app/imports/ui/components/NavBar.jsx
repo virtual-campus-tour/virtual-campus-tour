@@ -31,7 +31,7 @@ const NavBar = () => {
               <NavDropdown.Item id="scholarship-nav" as={NavLink} to="/Scholarship">
                 Scholarships
               </NavDropdown.Item>
-              <NavDropdown.Item id="buildings-nav" as={NavLink} to="/buildings">
+              <NavDropdown.Item id="buildings-nav" as={NavLink} to="/post-building">
                 Buildings
               </NavDropdown.Item>
               <NavDropdown.Item id="classrooms-nav" as={NavLink} to="/Classrooms">
