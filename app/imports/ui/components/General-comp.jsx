@@ -1,6 +1,6 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
 import { Pie } from 'react-chartjs-2';
+import { Col, Container, Row } from 'react-bootstrap';
 import { ChartSetup } from '../utilities/PieChart';
 
 const pieChartData = ChartSetup(33, 27.5, 17.7, 16.6, 2.2, 1.8, 0.6);
