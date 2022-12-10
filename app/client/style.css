@@ -212,3 +212,14 @@ a.nav-link{
   height: 100px;
   margin-right: 20px;
 }
+
+.class-photo {
+  width: 1280px;
+  height: 800px;
+}
+
+.center-text-below-header {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 30px;
+}
