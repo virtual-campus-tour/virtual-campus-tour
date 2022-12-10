@@ -21,6 +21,7 @@
     "core-js",
     "graphql",
     "meteor-node-stubs",
+    "react-chartjs-2",
     "uniforms"
   ],
   "ignorePatterns": [
@@ -40,8 +41,5 @@
     "private/**",
     "tests/**"
   ],
-  "ignoreUnimported": [
-    "imports/api/base/BaseUtilities.js",
-    "imports/test-utilities/test-utilities.js"
-  ]
+  "ignoreUnimported": []
 }
