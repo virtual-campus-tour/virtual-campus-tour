@@ -20,7 +20,7 @@ const ClassroomComp = () => (
         <img className="class-photo centered" src="/images/BIL-337-lab.jpg" alt="Bilger Lab" />
       </Carousel.Item>
     </Carousel>
-    <p className="center-text-below-header">These classrooms assist students to be able to learn in the most effective and efficient manner for courses</p>
+    <p className="center-text-below-header">These classrooms assist students to be able to learn in the most effective and efficient manner for courses.</p>
   </Container>
 
 );
