@@ -6,7 +6,7 @@ import { Tracker } from 'meteor/tracker';
 const StudentData = new Mongo.Collection('StudentData');
 
 const StudentDataValues = {
-  clubs: ['ACM', 'Game Dev', 'SWITCH', 'BDCUH'],
+  clubs: ['ACM', 'Game Dev', 'SWITCH', 'BDCUH', 'Grey Hats', 'PANDA'],
   // majors: ['Physics', 'Math', 'Chemistry', 'Computer Science'],
 };
 
@@ -15,7 +15,7 @@ const StudentDataSchema = new SimpleSchema({
   name: String,
   email: String,
   clubs: { type: Array, defaultValue: [] },
-  'clubs.$': { type: String, allowedValues: StudentDataValues.clubs },
+  'clubs.$': { type: String },
   // major: String,
 }, { tracker: Tracker });
 

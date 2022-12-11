@@ -6,6 +6,7 @@ import swal from 'sweetalert';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
 import { Clubs } from '../../api/club/Clubs';
+import { StudentDataValues } from '../../api/studentdata/StudentData';
 
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
@@ -22,6 +23,8 @@ const AddClub = () => {
   // On submit, insert the data.
   const submit = (data, formRef) => {
     const { name, image, description } = data;
+    StudentDataValues.clubs.push(name);
+    console.log(StudentDataValues.clubs);
     Clubs.collection.insert(
       { name, image, description },
       (error) => {
