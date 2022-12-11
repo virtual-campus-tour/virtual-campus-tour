@@ -16,7 +16,12 @@ const NavBar = () => {
     <Navbar bg="dark" expand="lg" className="navbar-dark">
       <Container>
         <Navbar.Brand as={NavLink} to="/">
-          <h2>UH Campus Tour</h2>
+          <img
+            src="/images/VirtualCampusTour.png"
+            height="30"
+            className="d-inline-block align-top"
+            alt="Virtual Campus Tour"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
