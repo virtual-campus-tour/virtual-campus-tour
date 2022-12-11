@@ -28,6 +28,19 @@ import WarriorRecreationCenter from '../pages/WarriorRecreationCenter';
 import AddClubs from '../pages/AddClubs';
 import DormingTour from '../pages/DormingTour';
 import DiningTour from '../pages/DiningTour';
+import Classrooms from '../pages/Classrooms';
+import ClassroomTour from '../pages/ClassroomTour';
+import WRCTour from '../pages/WRCTour';
+import AthleticsTour from '../pages/AthleticsTour';
+import ScholarshipTour from '../pages/ScholarshipTour';
+import DeptTour from '../pages/DeptTour';
+import TourEnd from '../pages/TourEnd';
+import Admission from '../pages/Admission';
+import AdmissionTour from '../pages/AdmissionTour';
+import CampusCenterTour from '../pages/CampusCenterTour';
+import PostBuilding from '../pages/PostBuilding';
+import POSTTour from '../pages/POSTTour';
+import StudyAreasTour from '../pages/StudyAreasTour';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -37,23 +50,36 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route path="/ICSDepartment" element={<Department />} />
+        <Route path="/DeptTour" element={<DeptTour />} />
+        <Route path="/Admission" element={<Admission />} />
+        <Route path="/AdmissionTour" element={<AdmissionTour />} />
+        <Route path="Classrooms" element={<Classrooms />} />
+        <Route path="/ClassroomTour" element={<ClassroomTour />} />
+        <Route path="/CampusCenterTour" element={<CampusCenterTour />} />
         <Route path="/dining" element={<Dining />} />
         <Route path="/Dorming" element={<Dorming />} />
         <Route path="/DormingTour" element={<DormingTour />} />
         <Route path="/DiningTour" element={<DiningTour />} />
         <Route path="/Scholarship" element={<Scholarship />} />
+        <Route path="/ScholarshipTour" element={<ScholarshipTour />} />
         <Route path="/GeneralTour" element={<GeneralTour />} />
-        <Route path="/campuscenter" element={<CampusCenter />} />
+        <Route path="/CampusCenter" element={<CampusCenter />} />
         <Route path="/Athletics" element={<Athletics />} />
+        <Route path="/AthleticsTour" element={<AthleticsTour />} />
         <Route path="/warrior-recreation-center" element={<WarriorRecreationCenter />} />
+        <Route path="/WRCTour" element={<WRCTour />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/study-areas" element={<StudyAreas />} />
+        <Route path="/StudyAreasTour" element={<StudyAreasTour />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/general" element={<General />} />
+        <Route path="/tourend" element={<TourEnd />} />
+        <Route path="/post-building" element={<PostBuilding />} />
+        <Route path="/POSTTour" element={<POSTTour />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/my-interests" element={<ProtectedRoute><MyInterests /></ProtectedRoute>} />
-        <Route path="/add" element={<ProtectedRoute><AddClubs /></ProtectedRoute>} />
+        <Route path="/add" element={<AdminProtectedRoute><AddClubs /></AdminProtectedRoute>} />
         <Route path="/edit/:email" element={<ProtectedRoute><EditUser /></ProtectedRoute>} />
         <Route path="/editClubs/:_id" element={<AdminProtectedRoute><EditClubs /></AdminProtectedRoute>} />
         <Route path="/listClubs" element={<ProtectedRoute><ListClubs /></ProtectedRoute>} />

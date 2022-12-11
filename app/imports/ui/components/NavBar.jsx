@@ -16,7 +16,12 @@ const NavBar = () => {
     <Navbar bg="dark" expand="lg" className="navbar-dark">
       <Container>
         <Navbar.Brand as={NavLink} to="/">
-          <h2>UH Campus Tour</h2>
+          <img
+            src="/images/VirtualCampusTour.png"
+            height="30"
+            className="d-inline-block align-top"
+            alt="Virtual Campus Tour"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -25,16 +30,19 @@ const NavBar = () => {
               <NavDropdown.Item id="general-nav" as={NavLink} to="/general">
                 General
               </NavDropdown.Item>
-              <NavDropdown.Item id="financial-info-nav" as={NavLink} to="/financial-information">
-                Financial Information
+              <NavDropdown.Item id="admissions-nav" as={NavLink} to="/Admission">
+                Admissions
               </NavDropdown.Item>
               <NavDropdown.Item id="scholarship-nav" as={NavLink} to="/Scholarship">
                 Scholarships
               </NavDropdown.Item>
-              <NavDropdown.Item id="buildings-nav" as={NavLink} to="/buildings">
+              <NavDropdown.Item id="buildings-nav" as={NavLink} to="/post-building">
                 Buildings
               </NavDropdown.Item>
-              <NavDropdown.Item id="book-a-tour-nav" as={NavLink} to="/book-a-tour">
+              <NavDropdown.Item id="classrooms-nav" as={NavLink} to="/Classrooms">
+                Classrooms
+              </NavDropdown.Item>
+              <NavDropdown.Item id="book-a-tour-nav" href="https://manoa.hawaii.edu/admissions/visit/">
                 Book A Tour
               </NavDropdown.Item>
             </NavDropdown>
@@ -47,6 +55,9 @@ const NavBar = () => {
               </NavDropdown.Item>
               <NavDropdown.Item id="study-areas-nav" as={NavLink} to="/study-areas">
                 Study Areas
+              </NavDropdown.Item>
+              <NavDropdown.Item id="CampusCenter-areas-nav" as={NavLink} to="/CampusCenter">
+                Campus Center
               </NavDropdown.Item>
               <NavDropdown.Item id="wrc-nav" as={NavLink} to="/warrior-recreation-center">
                 Warrior Recreation Center
@@ -64,11 +75,9 @@ const NavBar = () => {
               ICS Department
             </Nav.Link>
             {currentUser ? ([
-              <NavDropdown id="clubs-interest" title="Clubs">
-                <NavDropdown.Item id="my-interests-nav" as={NavLink} to="/my-interests">
-                  My Interest
-                </NavDropdown.Item>
-              </NavDropdown>,
+              <Nav.Link id="my-interest-nav" as={NavLink} to="/my-interests">
+                My Interest
+              </Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
               <NavDropdown id="administrative" title="Administrative">

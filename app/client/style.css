@@ -160,8 +160,16 @@ a.nav-link{
   width: 80%;
 }
 
+.tiny-spacer {
+  margin-top: 25px;
+}
+
 .small-spacer {
   margin-top: 50px
+}
+
+.small-spacer-bottom {
+  margin-bottom: 50px;
 }
 
 .half-spacer {
@@ -200,4 +208,65 @@ a.nav-link{
 .center-image-full {
   width: 250px;
   height: 400px;
+}
+
+.center-image-athletics {
+  width: 200px;
+  height: 100px;
+}
+
+.center-image-athletics-middle {
+  width: 200px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.class-photo {
+  width: 1280px;
+  height: 800px;
+}
+
+.center-text-below-header {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.center-diagram {
+  width: 972px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-size {
+  width: 100%;
+  font-size: 24px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.admiss-icon {
+
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 32px;
+  color: #024731;
+}
+
+.font-larger {
+  font-size: 24px;
+}
+
+.image-fill {
+  image: cover;
+  width: 508px;
+  height: 339px;
+}
+
+.small-spacer-bottom {
+  margin-bottom: 50px;
 }

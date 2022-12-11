@@ -12,7 +12,7 @@ const Footer = () => (
           Improving lives through education and research
         </Col>
         <Col md="auto" className="justify-content-end">
-          <Button variant="green" className="fs-4">Apply Now</Button>{' '}
+          <Button variant="green" className="fs-4" href="https://manoa.hawaii.edu/admissions/apply/">Apply Now</Button>{' '}
         </Col>
       </Row>
     </Container>
@@ -25,16 +25,15 @@ const Footer = () => (
           </Col>
           <Col className="pt-3">
             <Nav variant="dark" expand="lg" className="navbar-dark">
-              <Nav.Link id="interest-uhm-nav" as={NavLink} to="/interest" key="interest">Interest</Nav.Link>
-              <Nav.Link id="food-uhm-nav" as={NavLink} to="/food" key="food">Food</Nav.Link>
-              <Nav.Link id="facilities-uhm-nav" as={NavLink} to="/facilities" key="facilities">Facilities</Nav.Link>
-              <Nav.Link id="campus-life-uhm-nav" as={NavLink} to="/campusLife" key="campusLife">Campus Life</Nav.Link>
-              <Nav.Link id="majors-uhm-nav" as={NavLink} to="/majors" key="majors">Majors</Nav.Link>
-              <Nav.Link id="clubs-uhm-nav" as={NavLink} to="/clubs" key="clubs">Clubs</Nav.Link>
+              <Nav.Link id="interest-uhm-nav" as={NavLink} to="/ICSDepartment" key="interest">Computer Science Department & Clubs</Nav.Link>
+              <Nav.Link id="food-uhm-nav" as={NavLink} to="/dining" key="food">Food</Nav.Link>
+              <Nav.Link id="classrooms-uhm-nav" as={NavLink} to="/classrooms" key="classrooms">Classrooms</Nav.Link>
+              <Nav.Link id="dorming-uhm-nav" as={NavLink} to="/dorming" key="dorming">Dorming</Nav.Link>
+              <Nav.Link id="study-uhm-nav" as={NavLink} to="/study-areas" key="stufy">Study Areas</Nav.Link>
             </Nav>
           </Col>
           <Col className="text-center pt-4">
-            <Button variant="white" className="fs-4">Book an in-person tour soon</Button>{' '}
+            <Button variant="white" className="fs-4" href="https://manoa.hawaii.edu/admissions/visit/">Book an in-person tour soon</Button>{' '}
           </Col>
         </Row>
       </Container>
