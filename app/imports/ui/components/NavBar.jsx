@@ -75,7 +75,7 @@ const NavBar = () => {
               ICS Department
             </Nav.Link>
             {currentUser ? ([
-              <Nav.Link id="my-interest-nav" as={NavLink} to="/my-interest">
+              <Nav.Link id="my-interest-nav" as={NavLink} to="/my-interests">
                 My Interest
               </Nav.Link>,
             ]) : ''}
