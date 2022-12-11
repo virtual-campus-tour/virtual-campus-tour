@@ -79,7 +79,7 @@ const App = () => (
         <Route path="/POSTTour" element={<POSTTour />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/my-interests" element={<ProtectedRoute><MyInterests /></ProtectedRoute>} />
-        <Route path="/add" element={<ProtectedRoute><AddClubs /></ProtectedRoute>} />
+        <Route path="/add" element={<AdminProtectedRoute><AddClubs /></AdminProtectedRoute>} />
         <Route path="/edit/:email" element={<ProtectedRoute><EditUser /></ProtectedRoute>} />
         <Route path="/editClubs/:_id" element={<AdminProtectedRoute><EditClubs /></AdminProtectedRoute>} />
         <Route path="/listClubs" element={<ProtectedRoute><ListClubs /></ProtectedRoute>} />

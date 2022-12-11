@@ -36,7 +36,7 @@ const DeptComp = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center py-3">
-              <img src="/images/BDCUHLogo.png" alt="BDCUH Logo" className="box-img-sizeS" />
+              <img src="/images/BDCUHLogo.jpeg" alt="BDCUH Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center">Ballroom Dance Club</h4>
             {/* eslint-disable-next-line max-len */}
@@ -50,7 +50,7 @@ const DeptComp = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center py-3">
-              <img src="/images/SWITCHLogo.png" alt="Switch Logo" className="box-img-sizeS" />
+              <img src="/images/SWITCHLogo.jpeg" alt="Switch Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center">SWITCH</h4>
             {/* eslint-disable-next-line max-len */}
