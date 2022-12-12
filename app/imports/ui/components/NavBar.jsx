@@ -18,7 +18,7 @@ const NavBar = () => {
         <Navbar.Brand as={NavLink} to="/">
           <img
             src="/images/VirtualCampusTour.png"
-            height="30"
+            height="40"
             className="d-inline-block align-top"
             alt="Virtual Campus Tour"
           />
@@ -75,8 +75,8 @@ const NavBar = () => {
               ICS Department
             </Nav.Link>
             {currentUser ? ([
-              <Nav.Link id="my-interest-nav" as={NavLink} to="/my-interests">
-                My Interest
+              <Nav.Link id="my-interests-nav" as={NavLink} to="/my-interests">
+                My Interests
               </Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
