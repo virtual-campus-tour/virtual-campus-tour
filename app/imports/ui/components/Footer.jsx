@@ -25,11 +25,11 @@ const Footer = () => (
           </Col>
           <Col className="pt-3">
             <Nav variant="dark" expand="lg" className="navbar-dark">
-              <Nav.Link id="interest-uhm-nav" as={NavLink} to="/ICSDepartment" key="interest">Computer Science Department & Clubs</Nav.Link>
-              <Nav.Link id="food-uhm-nav" as={NavLink} to="/dining" key="food">Food</Nav.Link>
-              <Nav.Link id="classrooms-uhm-nav" as={NavLink} to="/classrooms" key="classrooms">Classrooms</Nav.Link>
-              <Nav.Link id="dorming-uhm-nav" as={NavLink} to="/dorming" key="dorming">Dorming</Nav.Link>
-              <Nav.Link id="study-uhm-nav" as={NavLink} to="/study-areas" key="stufy">Study Areas</Nav.Link>
+              <Nav.Link id="ics-department-foot" as={NavLink} to="/ICSDepartment" key="ics-department-foot">Computer Science Department & Clubs</Nav.Link>
+              <Nav.Link id="food-uhm-foot" as={NavLink} to="/dining" key="food">Food</Nav.Link>
+              <Nav.Link id="classrooms-uhm-foot" as={NavLink} to="/classrooms" key="classrooms">Classrooms</Nav.Link>
+              <Nav.Link id="dorming-uhm-foot" as={NavLink} to="/dorming" key="dorming">Dorming</Nav.Link>
+              <Nav.Link id="study-uhm-foot" as={NavLink} to="/study-areas" key="study">Study Areas</Nav.Link>
             </Nav>
           </Col>
           <Col className="text-center pt-4">

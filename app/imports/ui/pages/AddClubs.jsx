@@ -24,7 +24,6 @@ const AddClub = () => {
   const submit = (data, formRef) => {
     const { name, image, description } = data;
     StudentDataValues.clubs.push(name);
-    console.log(StudentDataValues.clubs);
     Clubs.collection.insert(
       { name, image, description },
       (error) => {
