@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
+import { Image } from 'react-bootstrap';
 
-const Club = ({ club }) => (
+const ClubItem = ({ club }) => (
   <tr>
     <td>{club.name}</td>
-    <td><img src={club.image} alt="peter-sadowski" className="box-img-sizeP" /></td>
+    <td><Image src={club.image} className="box-img-sizeP" /></td>
     <td>{club.description}</td>
     {Roles.userIsInRole(Meteor.userId(), 'admin') ?
       (
@@ -19,7 +20,7 @@ const Club = ({ club }) => (
 );
 
 // Require a document to be passed to this component.
-Club.propTypes = {
+ClubItem.propTypes = {
   club: PropTypes.shape({
     name: PropTypes.string,
     image: PropTypes.string,
@@ -28,4 +29,4 @@ Club.propTypes = {
   }).isRequired,
 };
 
-export default Club;
+export default ClubItem;

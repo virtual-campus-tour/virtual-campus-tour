@@ -5,7 +5,7 @@ import { Card, Image } from 'react-bootstrap';
 const Club = ({ club }) => (
   <Card className="h-100">
     <Card.Header>
-      <Image src={club.image} width={75} />
+      <Image src={club.image} width={75} className="py-3" />
       <Card.Title>{club.name}</Card.Title>
     </Card.Header>
     <Card.Body>
@@ -20,7 +20,6 @@ Club.propTypes = {
     name: PropTypes.string,
     image: PropTypes.string,
     description: PropTypes.string,
-    owner: PropTypes.string,
     _id: PropTypes.string,
   }).isRequired,
 };
