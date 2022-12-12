@@ -26,7 +26,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-evenly">
-            <NavDropdown id="about-uhm-nav" title="About UHM">
+            <NavDropdown id="about-uhm-nav" title="About UHM" key="about-uhm-nav">
               <NavDropdown.Item id="general-nav" as={NavLink} to="/general" key="general">
                 General
               </NavDropdown.Item>
@@ -46,7 +46,7 @@ const NavBar = () => {
                 Book A Tour
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown id="student-life-nav" title="Student Life">
+            <NavDropdown id="student-life-nav" title="Student Life" key="student-life-nav">
               <NavDropdown.Item id="dorming-nav" as={NavLink} to="/dorming" key="dorming">
                 Dorming
               </NavDropdown.Item>
@@ -80,7 +80,7 @@ const NavBar = () => {
               </Nav.Link>,
             ]) : ''}
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
-              <NavDropdown id="administrative" title="Administrative">
+              <NavDropdown id="administrative" title="Administrative" key="administrative">
                 <NavDropdown.Item id="add-club" as={NavLink} to="/add" key="add">
                   Add Club
                 </NavDropdown.Item>
@@ -92,7 +92,7 @@ const NavBar = () => {
           </Nav>
           <Nav className="justify-content-end">
             {currentUser === '' ? (
-              <NavDropdown id="login-dropdown" title="Login">
+              <NavDropdown id="login-dropdown" title="Login" key="login-dropdown">
                 <NavDropdown.Item id="login-dropdown-sign-in" as={NavLink} to="/signin" key="signin">
                   <PersonFill />
                   Sign
@@ -105,7 +105,7 @@ const NavBar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (
-              <NavDropdown id="navbar-current-user" title={currentUser}>
+              <NavDropdown id="navbar-current-user" title={currentUser} key="navbar-current-user">
                 <NavDropdown.Item id="navbar-edit-user" as={NavLink} to={`/edit/${currentUser}`} key="edit">
                   <BoxArrowRight />
                   {' '}
