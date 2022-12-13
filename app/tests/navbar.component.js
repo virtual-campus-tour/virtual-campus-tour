@@ -78,6 +78,36 @@ class NavBar {
     await testController.click('#navbar-current-user');
     await testController.click('#navbar-edit-user');
   }
+
+  async goToAllPages(testController) {
+    const visible = await Selector('#basic-navbar-nav').visible;
+    if (!visible) {
+      await testController.click('button.navbar-toggler');
+    }
+    await testController.click('#about-uhm-nav');
+    await testController.click('#general-nav');
+    await testController.click('#about-uhm-nav');
+    await testController.click('#admissions-nav');
+    await testController.click('#about-uhm-nav');
+    await testController.click('#scholarship-nav');
+    await testController.click('#about-uhm-nav');
+    await testController.click('#buildings-nav');
+    await testController.click('#about-uhm-nav');
+    await testController.click('#classrooms-nav');
+    await testController.click('#student-life-nav');
+    await testController.click('#dorming-nav');
+    await testController.click('#student-life-nav');
+    await testController.click('#dining-nav');
+    await testController.click('#student-life-nav');
+    await testController.click('#study-areas-nav');
+    await testController.click('#student-life-nav');
+    await testController.click('#CampusCenter-areas-nav');
+    await testController.click('#student-life-nav');
+    await testController.click('#wrc-nav');
+    await testController.click('#student-life-nav');
+    await testController.click('#uh-sports-nav');
+    await testController.click('#ics-department-nav');
+  }
 }
 
 export const navBar = new NavBar();

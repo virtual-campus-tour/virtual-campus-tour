@@ -16,13 +16,16 @@ import { postpage } from './POST.page';
 import { admissionspage } from './admissions.page';
 import { scholarshipspage } from './scholarships.page';
 import { finishtour } from './finishtour.page';
+import { footer } from './footer.component';
 import { interest } from './interest.page';
 import { EditUser } from './edituser.page';
+import { addClub } from './addClub.page';
 
 /* global fixture:false, test:false */
 
 /** Credentials for one of the sample users defined in settings.development.json. */
 const credentials = { username: 'john@foo.com', password: 'changeme' };
+const credentialsAdmin = { username: 'admin@foo.com', password: 'changeme' };
 
 fixture('meteor-react-bootstrap-template localhost test with default db')
   .page('http://localhost:3000');
@@ -83,6 +86,22 @@ test('Test that end tour page works', async (testController) => {
   await finishtour.isDisplayed(testController);
 });
 
+test('Test that footer page works', async (testController) => {
+  await footer.goToAllPagesFooter(testController);
+});
+
+test('Test that nav bar pages work', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.isLoggedIn(testController, credentials.username);
+  await navBar.logout(testController);
+  await signoutPage.isDisplayed(testController);
+});
+
+test('Test that navbar tabs work', async (testController) => {
+  await navBar.goToAllPages(testController);
+});
+
 test('Test that signin and signout work', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
@@ -108,4 +127,11 @@ test('Test that Edit User page works', async (testController) => {
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoEditUserPage(testController);
   await EditUser.isDisplayed(testController);
+  await EditUser.selectClub(testController);
+});
+
+test('Test that Add Club User page works', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentialsAdmin.username, credentialsAdmin.password);
+  await addClub.goToAddPage(testController);
 });
