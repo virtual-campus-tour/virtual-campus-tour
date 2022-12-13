@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const AdmissionComp = () => (
   <>
-    <h1 className="text-center small-spacer">Freshman Admission Information</h1>
+    <h1 className="text-center small-spacer" id="admissions-page">Freshman Admission Information</h1>
     <Container className="small-spacer">
       <h2 className="text-center small-spacer-bottom">High School Requirements</h2>
       <Row>

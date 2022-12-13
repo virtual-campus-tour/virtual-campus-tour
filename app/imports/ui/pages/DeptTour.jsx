@@ -15,7 +15,7 @@ const DeptTour = () => (
           <div className="small-spacer" />
         </Col>
         <Col className="center">
-          <Button href="/POSTTour" variant="green" className="btn btn-lg fs-2">
+          <Button href="/POSTTour" variant="green" className="btn btn-lg fs-2" id="post-page-click">
             Next Page
           </Button>
           <div className="small-spacer" />

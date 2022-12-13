@@ -15,7 +15,7 @@ const AdmissionTour = () => (
           <div className="small-spacer" />
         </Col>
         <Col className="center">
-          <Button href="/ScholarshipTour" variant="green" className="btn btn-lg fs-2">
+          <Button href="/ScholarshipTour" variant="green" className="btn btn-lg fs-2" id="scholarships-page-click">
             Next Page
           </Button>
           <div className="small-spacer" />

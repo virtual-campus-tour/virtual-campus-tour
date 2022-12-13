@@ -15,7 +15,7 @@ const AthleticsTour = () => (
           <div className="small-spacer" />
         </Col>
         <Col className="center">
-          <Button href="/DeptTour" variant="green" className="btn btn-lg fs-2">
+          <Button href="/DeptTour" variant="green" className="btn btn-lg fs-2" id="department-page-click">
             Next Page
           </Button>
           <div className="small-spacer" />

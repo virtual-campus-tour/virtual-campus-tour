@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const CampusCenterComp = () => (
-  <Container id="campus-center">
+  <Container id="campus-center-page">
     <div className="small-spacer">
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <img className="general-image centered" src="/images/campus-center.jpg" alt="CampusCenter" />

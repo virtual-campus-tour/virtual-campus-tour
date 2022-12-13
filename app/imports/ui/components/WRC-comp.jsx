@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
 
 const WRCComp = () => (
-  <Container>
+  <Container id="warrior-rec-page">
     <Row>
       <Col className="center w-50">
         <h1>Warrior Recreation Center</h1>

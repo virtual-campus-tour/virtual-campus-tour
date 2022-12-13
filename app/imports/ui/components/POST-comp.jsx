@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const PostBuilding = () => (
-  <Container className="small-spacer">
+  <Container className="small-spacer" id="post-page">
     <Row>
       <Container className="small-spacer">
         <Row>

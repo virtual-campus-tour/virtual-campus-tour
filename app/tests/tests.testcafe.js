@@ -4,7 +4,18 @@ import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
 import { general } from './general.page';
 import { dorming } from './dorming.page';
+import { food } from './food.page';
+import { studyareas } from './studyareas.page';
+import { athletics } from './athletics.page';
+import { classroom } from './classroom.page';
+import { campuscenter } from './campuscenter.page';
+import { warriorrec } from './warriorrec.page';
 import { department } from './department.page';
+import { departmenttour } from './departmenttour.page';
+import { postpage } from './POST.page';
+import { admissionspage } from './admissions.page';
+import { scholarshipspage } from './scholarships.page';
+import { finishtour } from './finishtour.page';
 import { interest } from './interest.page';
 import { EditUser } from './edituser.page';
 
@@ -26,6 +37,50 @@ test('Test that general page works', async (testController) => {
 
 test('Test that dorming page works', async (testController) => {
   await dorming.isDisplayed(testController);
+});
+
+test('Test that food page works', async (testController) => {
+  await food.isDisplayed(testController);
+});
+
+test('Test that classroom page works', async (testController) => {
+  await classroom.isDisplayed(testController);
+});
+
+test('Test that campus center page works', async (testController) => {
+  await campuscenter.isDisplayed(testController);
+});
+
+test('Test that warrior rec page works', async (testController) => {
+  await warriorrec.isDisplayed(testController);
+});
+
+test('Test that study areas page works', async (testController) => {
+  await studyareas.isDisplayed(testController);
+});
+
+test('Test that athletics page works', async (testController) => {
+  await athletics.isDisplayed(testController);
+});
+
+test('Test that tour department page works', async (testController) => {
+  await departmenttour.isDisplayed(testController);
+});
+
+test('Test that post page works', async (testController) => {
+  await postpage.isDisplayed(testController);
+});
+
+test('Test that admissions page works', async (testController) => {
+  await admissionspage.isDisplayed(testController);
+});
+
+test('Test that scholarships page works', async (testController) => {
+  await scholarshipspage.isDisplayed(testController);
+});
+
+test('Test that end tour page works', async (testController) => {
+  await finishtour.isDisplayed(testController);
 });
 
 test('Test that signin and signout work', async (testController) => {

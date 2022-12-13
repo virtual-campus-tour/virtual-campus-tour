@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 
 const DiningComp = () => (
-  <Container>
+  <Container id="dining-page">
     <Row>
       <Col className="center">
         <h1 className="small-spacer">Places to eat around UH Manoa</h1>
