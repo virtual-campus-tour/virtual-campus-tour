@@ -49,13 +49,13 @@ const AddClub = () => {
             <Card>
               <Card.Body>
                 <Row>
-                  <Col><TextField name="name" /></Col>
-                  <Col><TextField name="image" /></Col>
+                  <Col><TextField name="name" id="name" /></Col>
+                  <Col><TextField name="image" id="image" /></Col>
                 </Row>
                 <Row>
-                  <Col><LongTextField name="description" /></Col>
+                  <Col><LongTextField name="description" id="description" /></Col>
                 </Row>
-                <SubmitField value="Submit" />
+                <SubmitField value="Submit" id="submit" />
                 <ErrorsField />
               </Card.Body>
             </Card>

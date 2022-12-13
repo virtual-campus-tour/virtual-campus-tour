@@ -130,7 +130,7 @@ test('Test that Edit User page works', async (testController) => {
   await EditUser.selectClub(testController);
 });
 
-test('Test that Add Club User page works', async (testController) => {
+test('Test that Add & List Club User page works', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentialsAdmin.username, credentialsAdmin.password);
   await addClub.goToAddPage(testController);
