@@ -15,7 +15,7 @@ const DeptComp = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center pt-4 pb-3">
-              <img src="/images/ACMLogo.webp" alt="ACM Logo" className="box-img-sizeS" />
+              <img src="/images/ACMImg.webp" alt="ACM Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center pt-2 pb-3">Association for Computing Machinery</h4>
             {/* eslint-disable-next-line max-len */}
@@ -36,7 +36,7 @@ const DeptComp = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center pt-4 pb-3">
-              <img src="/images/SWITCHLogo.png" alt="SWITCH Logo" className="box-img-sizeS" />
+              <img src="/images/SWITCHLogo.jpeg" alt="SWITCH Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center pt-2 pb-3">SWITCH</h4>
             {/* eslint-disable-next-line max-len */}
@@ -50,7 +50,7 @@ const DeptComp = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center pt-4 pb-3">
-              <img src="/images/BDCUHLogo.png" alt="BDCUH Logo" className="box-img-sizeS" />
+              <img src="/images/BDCUHLogo.jpeg" alt="BDCUH Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center pt-2 pb-3">Ballroom Dance Club</h4>
             {/* eslint-disable-next-line max-len */}
@@ -61,7 +61,7 @@ const DeptComp = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center pt-4 pb-3">
-              <img src="/images/GreyHatsLogo.webp" alt="Grey Hats Logo" className="box-img-sizeS" />
+              <img src="/images/GHImg.webp" alt="Grey Hats Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center pt-2 pb-3">Grey Hats</h4>
             {/* eslint-disable-next-line max-len */}
@@ -72,7 +72,7 @@ const DeptComp = () => (
         <Col>
           <Container className="container-borderC">
             <div className="text-center pt-4 pb-3">
-              <img src="/images/PANDALogo.png" alt="PANDA Logo" className="box-img-sizeS" />
+              <img src="/images/PandasImg.webp" alt="PANDA Logo" className="box-img-sizeS" />
             </div>
             <h4 className="text-center pt-2 pb-3">PANDA</h4>
             {/* eslint-disable-next-line max-len */}
