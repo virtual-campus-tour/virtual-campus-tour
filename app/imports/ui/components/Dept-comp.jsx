@@ -115,7 +115,7 @@ const DeptComp = () => (
             </div>
             <h4 className="text-center pb-2">Medical Imaging</h4>
             {/* eslint-disable-next-line max-len */}
-            <p className="text-center">Computer Science faculty Dr. Peter Washington and Dr. Peter Sadowski collaborated with Dr. John Shepherd at the UH Cancer Center to apply AI to medical imaging applications, including total-body DXA,breast cancer detection, and the Makawalu project which is developing a portable AI-based  ultrasound breast cancer screening tool.</p>
+            <p className="text-center">Computer Science faculty Dr. Peter Washington and Dr. Peter Sadowski collaborate with Dr. John Shepherd at the UH Cancer Center to apply AI to medical imaging applications, including total-body DXA,breast cancer detection, and the Makawalu project which is developing a portable AI-based  ultrasound breast cancer screening tool.</p>
           </Container>
         </Col>
       </Row>
