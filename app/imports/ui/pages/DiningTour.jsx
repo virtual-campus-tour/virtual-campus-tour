@@ -15,7 +15,7 @@ const DiningTour = () => (
           <div className="small-spacer" />
         </Col>
         <Col className="center">
-          <Button href="/ClassroomTour" variant="green" className="btn btn-lg fs-2">
+          <Button href="/ClassroomTour" variant="green" className="btn btn-lg fs-2" id="classroom-page-click">
             Next Page
           </Button>
           <div className="small-spacer" />

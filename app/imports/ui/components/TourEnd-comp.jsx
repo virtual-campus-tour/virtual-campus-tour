@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 
 const TourEndComp = () => (
-  <Container>
+  <Container id="finish-tour-page">
     <Row>
       <h1 className="text-center py-2 ">Thank you for taking our tour!</h1>
       <h2 className="text-center">We look forward to seeing you on campus! Go Bows!</h2>

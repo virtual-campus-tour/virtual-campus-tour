@@ -3,7 +3,7 @@ import { Carousel, Container } from 'react-bootstrap';
 
 const ClassroomComp = () => (
 
-  <Container className="small-spacer">
+  <Container className="small-spacer" id="classroom-page">
 
     <h1 className="text-center">Classrooms</h1>
 

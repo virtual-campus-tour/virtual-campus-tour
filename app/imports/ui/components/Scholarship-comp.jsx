@@ -5,7 +5,7 @@ const ScholarshipComp = () => (
 
   <div>
 
-    <h1 className="text-center small-spacer">UH Manoa Scholarships</h1>
+    <h1 className="text-center small-spacer" id="scholarships-page">UH Manoa Scholarships</h1>
     <Container className="small-spacer">
       <h2>New Warrior Scholarship</h2>
       <p>

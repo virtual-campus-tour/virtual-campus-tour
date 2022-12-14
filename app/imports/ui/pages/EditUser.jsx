@@ -67,7 +67,7 @@ const EditUser = () => {
                   inline
                   transform={transform}
                 />
-                <SubmitField value="Update" />
+                <SubmitField value="Update" id="update" />
               </Container>
             </Card>
           </AutoForm>

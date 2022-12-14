@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const StudyAreasComp = () => (
-  <Container id="athletics-page">
+  <Container id="study-areas-page">
     <div className="small-spacer">
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <img className="general-image centered" src="/images/uh-manoa-front.png" alt="AthleticsImage" />

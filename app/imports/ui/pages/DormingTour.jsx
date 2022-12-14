@@ -10,7 +10,7 @@ const DormingTour = () => (
     <Container>
       <Row className="mt-3">
         <Col className="center">
-          <Button href="/GeneralTour" variant="green" className="btn btn-lg fs-2" id="dining-page-click">
+          <Button href="/GeneralTour" variant="green" className="btn btn-lg fs-2">
             Previous Page
           </Button>
           <div className="small-spacer" />

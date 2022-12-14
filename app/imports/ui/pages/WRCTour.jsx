@@ -15,7 +15,7 @@ const WRCTour = () => (
           <div className="small-spacer" />
         </Col>
         <Col className="center">
-          <Button href="/StudyAreasTour" variant="green" className="btn btn-lg fs-2">
+          <Button href="/StudyAreasTour" variant="green" className="btn btn-lg fs-2" id="study-areas-click">
             Next Page
           </Button>
           <div className="small-spacer" />
