@@ -270,3 +270,12 @@ a.nav-link{
 .small-spacer-bottom {
   margin-bottom: 50px;
 }
+
+.eat-list-img {
+  object-fit: contain;
+  height: auto;
+  max-height: 150px;
+  min-height: 150px;
+  width: auto;
+  max-width: 100%;
+}

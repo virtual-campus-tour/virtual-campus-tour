@@ -28,6 +28,14 @@ const GeneralComp = () => (
         </Col>
       </Row>
     </div>
+    <div className="small-spacer">
+      <img className="centered" src="/images/general-image.png" alt="General Manoa" />
+    </div>
+    <Container className="small-spacer">
+      <h3 className="text-center">Maluna aʻe o nā lāhui a pau ke ola ke kanaka</h3>
+      <h3 className="text-center">(Above all nations is humanity)</h3>
+      <div className="small-spacer" />
+    </Container>
     <Row>
       <h2 className="text-center">Undergraduate Diversity</h2>
       <Col>
@@ -46,15 +54,7 @@ const GeneralComp = () => (
         <p className="text-center-p">American Indian or Alaska Native 0.6%</p>
       </Col>
     </Row>
-    <div className="small-spacer">
-      <img className="centered" src="/images/general-image.png" alt="General Manoa" />
-    </div>
 
-    <Container className="small-spacer">
-      <h3 className="text-center">Maluna aʻe o nā lāhui a pau ke ola ke kanaka</h3>
-      <h3 className="text-center">(Above all nations is humanity)</h3>
-      <div className="small-spacer" />
-    </Container>
   </>
 );
 
